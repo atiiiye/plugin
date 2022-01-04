@@ -1,0 +1,30 @@
+@import './fonts';
+
+$color-light:#fff;
+$color-light-2:#faf6fb;
+$color-gray:#eeeeee;
+$color-gray-2:#979797;
+$color-gray-3:#3e3f3f;
+$color-error:#ef5662;
+$color-dark:#000000;
+
+$color-font:#F4F9F9;
+$color-background:#faf6fb;
+$color-selected:#00bfd6;
+
+body {
+    font-family: 'Samim';
+    background-color: $color-light;
+    font-size: 100%;
+    direction: rtl;
+    box-sizing: border-box;
+
+    a:focus {
+        outline: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+}
