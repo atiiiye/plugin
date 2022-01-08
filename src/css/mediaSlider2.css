@@ -1,0 +1,54 @@
+@media (max-width: 991px) {
+  section.dolatsara-slider-section {
+    padding: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+  section.dolatsara-slider-section div.dolatsara-slider {
+    height: 70%;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+    padding: 1rem 2rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder {
+    height: 120px;
+    width: 150px;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
+    padding: .5rem 0;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
+    height: 50px;
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column {
+    padding: 0 0.5rem;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
+    width: 16px;
+    height: 16px;
+  }
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent .item-slide__sub-title {
+    font-size: 14px;
+    max-width: 120px;
+    padding: 0.375rem 0;
+  }
+  section.dolatsara-slider-section button.view-all {
+    padding: 0.375rem;
+    width: 100px;
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=mediaSlider2.css.map */
