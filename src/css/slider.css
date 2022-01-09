@@ -21,9 +21,6 @@ body {
   direction: rtl;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("./../images/Banners.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
 
 body a:focus {

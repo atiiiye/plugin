@@ -32,16 +32,6 @@ body .container-fluid {
   margin: 0;
 }
 
-button.view-all {
-  background-color: #4a1f61;
-  border: 0;
-  padding: 0.375rem;
-  border-radius: 4px;
-  color: white;
-  width: 100px;
-  font-family: "Samim";
-}
-
 section.dolatsara-slider-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +47,7 @@ section.dolatsara-slider-section {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 100vh;
+  margin: 2rem 0;
 }
 
 section.dolatsara-slider-section div.dolatsara-slider {
@@ -77,11 +67,11 @@ section.dolatsara-slider-section div.dolatsara-slider {
   background-repeat: no-repeat;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper {
   width: 80%;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
   -webkit-box-shadow: inset 0 0 4px #b8b8b8;
           box-shadow: inset 0 0 4px #b8b8b8;
   border-radius: 12px;
@@ -92,15 +82,16 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.sw
   transition: all 0.3ms ease-in;
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
+  margin-top: 2rem;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
   padding: 1rem 2rem;
   height: 350px;
   text-decoration: none;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,20 +111,20 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.sw
   width: calc(100% - 3rem);
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  height: 150px;
-  width: 170px;
+  height: 120px;
+  width: 150px;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder img {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder img {
   border-radius: 0.5rem;
   width: 100%;
   height: 100%;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
   color: #4a1f61;
   font-weight: 700;
   padding: 1rem 0;
@@ -144,7 +135,7 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.sw
   padding: 0.375rem 0;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,18 +150,18 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.sw
   margin: 0 1.5rem;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column {
   padding: 0 0.5rem;
   text-align: center;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
   color: #4a1f61;
   width: 16px;
   height: 16px;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent .item-slide__sub-title {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .item-slide__sub-title {
   color: #b8b8b8;
   font-size: 14px;
   text-align: center;
@@ -181,41 +172,18 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.sw
   padding: 0.375rem 0;
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide-prev,
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide-next {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
   -webkit-transform: scale(0.88);
           transform: scale(0.88);
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide-active {
+section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-button-prev,
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-button-next {
-  background-color: white;
-  -webkit-box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-          box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  color: #4a1f61;
-}
-
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-button-prev:after,
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-button-next:after {
-  font-size: 24px;
-  font-weight: 900;
-}
-
-section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-button-disabled {
-  color: #979797;
-  -webkit-box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-          box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-}
-
-section.most-visited-slider {
+section.several-row-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,19 +198,19 @@ section.most-visited-slider {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 100vh;
+  margin: 2rem 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(95%, white)), -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(95%, white)), url("./../images/VectorSmartObjectcopy4.png");
   background-image: linear-gradient(to bottom, transparent, white 95%), linear-gradient(to top, transparent, white 95%), url("./../images/VectorSmartObjectcopy4.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-section.most-visited-slider h2 {
+section.several-row-slider h2.several-row-slider__title {
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-section.most-visited-slider div.dolatsara-slider {
+section.several-row-slider div.dolatsara-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,15 +221,13 @@ section.most-visited-slider div.dolatsara-slider {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 {
-  width: 70%;
+section.several-row-slider div.dolatsara-slider div.swiper {
+  width: 80%;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -271,7 +237,7 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
           align-items: center;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
   -webkit-box-shadow: inset 0 0 4px #b8b8b8;
           box-shadow: inset 0 0 4px #b8b8b8;
   border-radius: 12px;
@@ -280,7 +246,7 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
   margin-top: 30px;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,26 +263,26 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
           justify-content: center;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   height: 150px;
   width: 100%;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   width: 100%;
   height: 100%;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box {
-  padding: 1rem 2rem;
-  width: calc(100% - 4rem);
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box {
+  padding: 1rem;
+  width: calc(100% - 2rem);
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box h3.title-item {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box h3.title-item {
   font-weight: 600;
   color: black;
   text-align: center;
@@ -327,7 +293,7 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
   padding: 0.375rem 0;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.code-name-advertising-box {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,14 +308,14 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
   margin-top: 1rem;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.code-name-advertising-box p.code-advertising,
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.code-name-advertising-box p.name-advertising {
-  margin: 1rem;
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.code-advertising,
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.name-advertising {
+  margin: 0.5rem 0;
   color: #b8b8b8;
   font-size: 80%;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.card-footer-slider {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,8 +329,8 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
   margin: 1rem 0;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.card-footer-slider p.home-advertising,
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.card-footer-slider p.location-advertising {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising,
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,35 +347,345 @@ section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper
   font-size: 80%;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.card-footer-slider p.home-advertising svg.footer-icon,
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-wrapper div.swiper-slide .slide-item-parent div.content-box div.card-footer-slider p.location-advertising svg.footer-icon {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising svg.footer-icon,
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising svg.footer-icon {
   margin-left: 0.375rem;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-pagination.swiper-pagination-bullets {
+section.several-row-slider div.dolatsara-slider div.swiper div.swiper-pagination.swiper-pagination-bullets {
   display: none;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-button-prev,
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-button-next {
+section.single-row-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+section.single-row-slider h2.single-row-slider__title {
+  width: 90%;
+  text-align: center;
+  border-bottom: 1px solid #b8b8b8;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section.single-row-slider h2.single-row-slider__title span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+section.single-row-slider div.dolatsara-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper {
+  width: 80%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+  -webkit-box-shadow: inset 0 0 4px #b8b8b8;
+          box-shadow: inset 0 0 4px #b8b8b8;
+  border-radius: 12px;
   background-color: white;
-  -webkit-box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-          box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  height: calc((100% - 30px) / 2);
+  margin-top: 30px;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  height: 150px;
+  width: 100%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box {
+  padding: 1rem;
+  width: calc(100% - 2rem);
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box h3.title-item {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #b8b8b8;
+  margin-top: 1rem;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.code-advertising,
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box p.name-advertising {
+  margin: 1rem;
+  color: #b8b8b8;
+  font-size: 80%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising,
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b8b8b8;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 0.375rem;
+  font-size: 80%;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising svg.footer-icon,
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising svg.footer-icon {
+  margin-left: 0.375rem;
+}
+
+section.single-row-slider div.dolatsara-slider div.swiper div.swiper-pagination.swiper-pagination-bullets {
+  display: none;
+}
+
+section.album-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+  background-image: url("./../images/polyganBg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section.album-slider .dolatsara-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper {
+  padding: 3rem 0;
+  width: 80%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+  -webkit-box-shadow: 0 0 4px #b8b8b8;
+          box-shadow: 0 0 4px #b8b8b8;
+  border-radius: 12px;
+  background-color: white;
+  -webkit-transition: all 0.3ms ease-in;
+  transition: all 0.3ms ease-in;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 10;
+  margin-top: 3rem;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  height: 350px;
+  text-decoration: none;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  height: 200px;
+  width: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider {
+  padding: 0.5rem 1rem;
+  height: 150px;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #b8b8b8;
+  padding: .5rem 0;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child h3 {
   color: #4a1f61;
+  font-size: 1.15rem;
+  max-width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
+  font-weight: 600;
+  margin-left: .5rem;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-button-prev:after,
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-button-next:after {
-  font-size: 24px;
-  font-weight: 900;
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child p.title-article {
+  color: #b8b8b8;
+  font-size: 14px;
+  max-width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 0.375rem 0;
 }
 
-section.most-visited-slider div.dolatsara-slider div.swiper.mySwiper2 div.swiper-button-disabled {
-  color: #979797;
-  -webkit-box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
-          box-shadow: 0 0 8px 2px rgba(62, 63, 63, 0.5);
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child .image-placeholder {
+  border-radius: 50%;
+  height: 45px;
+  width: 50px;
+  border: 1px solid rgba(184, 184, 184, 0.5);
+  margin-left: .5rem;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child .image-placeholder img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider p {
+  color: #b8b8b8;
+  font-size: 90%;
+  margin-left: .5rem;
+  padding: .5rem 0;
+  line-height: 1.1;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider p small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  z-index: 100;
+}
+
+section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  z-index: 1000;
+  -webkit-box-shadow: 0 0 4px #b8b8b8;
+          box-shadow: 0 0 4px #b8b8b8;
 }
 /*# sourceMappingURL=slider2.css.map */
