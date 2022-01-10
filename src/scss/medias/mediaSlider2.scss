@@ -187,12 +187,12 @@
       div.swiper {
         width: 90%;
 
-        div.swiper-wrapper{
+        div.swiper-wrapper {
           div.swiper-slide-prev,
           div.swiper-slide-next {
             transform: scale(1.025);
           }
-  
+
           div.swiper-slide-active {
             transform: scale(1.18);
           }
@@ -203,6 +203,25 @@
 
   section.tab-navigation {
     display: none;
+  }
+
+  section.best-categorie-icon {
+     @include section-style;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .icon-box {
+      @include section-style;
+      background-color: rgba($color: $color-purple, $alpha: 1);
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+
+      .icon-category {
+        color: rgba($color: $color-light, $alpha: 1);
+        font-size: 24px;
+      }
+    }
   }
 }
 
@@ -248,4 +267,15 @@
       }
     }
   }
+
+  section.best-categorie-icon {
+   .icon-box {
+     width: 45px;
+     height: 45px;
+
+     .icon-category {
+       font-size:1rem;
+     }
+   }
+ }
 }

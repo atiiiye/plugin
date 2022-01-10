@@ -101,6 +101,53 @@ body .container-fluid {
   section.tab-navigation {
     display: none;
   }
+  section.best-categorie-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section.best-categorie-icon .icon-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+    background-color: #4a1f61;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+  }
+  section.best-categorie-icon .icon-box .icon-category {
+    color: white;
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -129,6 +176,13 @@ body .container-fluid {
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  section.best-categorie-icon .icon-box {
+    width: 45px;
+    height: 45px;
+  }
+  section.best-categorie-icon .icon-box .icon-category {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=mediaSlider2.css.map */

@@ -767,5 +767,10 @@ section.tab-navigation .tab-navigation__content {
 
 section.tab-navigation .tab-navigation__content p {
   padding: 1rem;
+  min-height: 30px;
+}
+
+section.best-categorie-icon {
+  display: none;
 }
 /*# sourceMappingURL=slider2.css.map */
