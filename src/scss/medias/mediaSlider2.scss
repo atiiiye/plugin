@@ -109,17 +109,17 @@
           }
         }
 
-        div.swiper-pagination.swiper-pagination-bullets {
-          display: block;
+        // div.swiper-pagination.swiper-pagination-bullets {
+        //   display: block;
 
-          span.swiper-pagination-bullet-active {
-            background-color: rgba($color: $color-purple, $alpha: 1);
-          }
-        }
+        //   span.swiper-pagination-bullet-active {
+        //     background-color: rgba($color: $color-purple, $alpha: 1);
+        //   }
+        // }
 
         div.swiper-button-prev,
         div.swiper-button-next {
-          display: none;
+          // display: none;
         }
       }
     }
@@ -166,17 +166,17 @@
           }
         }
 
-        div.swiper-pagination.swiper-pagination-bullets {
-          display: block;
+        // div.swiper-pagination.swiper-pagination-bullets {
+        //   display: block;
 
-          span.swiper-pagination-bullet-active {
-            background-color: rgba($color: $color-purple, $alpha: 1);
-          }
-        }
+        //   span.swiper-pagination-bullet-active {
+        //     background-color: rgba($color: $color-purple, $alpha: 1);
+        //   }
+        // }
 
         div.swiper-button-prev,
         div.swiper-button-next {
-          display: none;
+          // display: none;
         }
       }
     }
@@ -199,6 +199,10 @@
         }
       }
     }
+  }
+
+  section.tab-navigation {
+    display: none;
   }
 }
 

@@ -136,4 +136,26 @@ $(document).ready(function () {
     //   disableOnInteraction: false,
     // },
   });
+
+  const tabButton = document.querySelectorAll(".tab-navigation__tab-btn");
+  const tabContent = document.querySelectorAll(".tab-navigation__content");
+  tabContent[1].style.display = "block";
+
+  tabButton.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      for (let i = 0; i < tabButton.length; i++)
+        tabButton[i].classList.remove("selected");
+      Navigation(item, index);
+    });
+  });
+
+  const Navigation = (item, index) => {
+    const contentTab = tabContent[index].getAttribute("id");
+    item.classList.add("selected");
+
+    for (let i = 0; i < tabContent.length; i++)
+      tabContent[i].style.display = "none";
+
+    document.getElementById(contentTab).style.display = "block";
+  };
 });

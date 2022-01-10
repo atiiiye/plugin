@@ -1,12 +1,7 @@
 @import "./base";
 
 section.dolatsara-slider-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 2rem 0;
+  @include section-style;
 
   div.dolatsara-slider {
     display: flex;
@@ -121,13 +116,7 @@ section.dolatsara-slider-section {
 }
 
 section.several-row-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 2rem 0;
-  // height: 100vh;
+  @include section-style;
   background-image: linear-gradient(
       to bottom,
       transparent,
@@ -256,12 +245,7 @@ section.several-row-slider {
 }
 
 section.single-row-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 2rem 0;
+  @include section-style;
 
   h2.single-row-slider__title {
     width: 90%;
@@ -387,12 +371,7 @@ section.single-row-slider {
 }
 
 section.album-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 2rem 0;
+  @include section-style;
   background-image: url("./../images/polyganBg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -408,7 +387,6 @@ section.album-slider {
       width: 80%;
 
       div.swiper-wrapper {
-
         div.swiper-slide {
           box-shadow: 0 0 4px rgba($color: $color-gray-4, $alpha: 1);
           border-radius: 12px;
@@ -443,9 +421,9 @@ section.album-slider {
               .card-body-child {
                 display: flex;
                 align-items: center;
-                justify-content:flex-start;
+                justify-content: flex-start;
                 border-bottom: 1px solid rgba($color: $color-gray-4, $alpha: 1);
-                padding: .5rem 0;
+                padding: 0.5rem 0;
 
                 h3 {
                   color: rgba($color: $color-purple, $alpha: 1);
@@ -456,8 +434,7 @@ section.album-slider {
                   overflow: hidden;
                   padding: 0.375rem 0;
                   font-weight: 600;
-                  margin-left: .5rem;
-
+                  margin-left: 0.5rem;
                 }
 
                 p.title-article {
@@ -475,7 +452,7 @@ section.album-slider {
                   height: 45px;
                   width: 50px;
                   border: 1px solid rgba($color: $color-gray-4, $alpha: 0.5);
-                  margin-left: .5rem;
+                  margin-left: 0.5rem;
 
                   img {
                     border-radius: 50%;
@@ -488,8 +465,8 @@ section.album-slider {
               p {
                 color: rgba($color: $color-gray-4, $alpha: 1);
                 font-size: 90%;
-                margin-left: .5rem;
-                padding: .5rem 0;
+                margin-left: 0.5rem;
+                padding: 0.5rem 0;
                 line-height: 1.1;
 
                 small {
@@ -505,18 +482,77 @@ section.album-slider {
         div.swiper-slide-next {
           transform: scale(1.07);
           z-index: 100;
-
         }
 
         div.swiper-slide-active {
           transform: scale(1.25);
           z-index: 1000;
           box-shadow: 0 0 4px rgba($color: $color-gray-4, $alpha: 1);
-
         }
       }
     }
   }
 }
 
+section.tab-navigation {
+  @include section-style;
 
+  .tab-navigation__tabs {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+
+    .tab-navigation__tab-link {
+      text-decoration: none;
+      box-shadow: 0 0 4px rgba($color: $color-gray-4, $alpha: 1);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+
+      .tab-navigation__tab-btn {
+        font-family: "Samim";
+        font-size: 14px;
+        background-color: rgba($color: $color-light, $alpha: 1);
+        border: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        // height: 30px;
+        max-width: 100px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 0.375rem;
+
+      }
+
+      .tab-navigation__tab-btn.selected {
+        background-color: rgba($color: $color-gray, $alpha: 1);
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba($color: $color-purple, $alpha: 1);
+          height: 4px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .tab-navigation__content {
+    width: 90%;
+    line-height: 1.5;
+    background-color: rgba($color: $color-gray, $alpha: 1);
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    box-shadow: 0 2px 4px rgba($color: $color-gray-4, $alpha: 1);
+    display: none;
+    
+    p {
+      padding: 1rem;
+      min-height: 30px;
+    }
+  }
+}

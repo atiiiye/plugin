@@ -32,3 +32,12 @@ body {
         margin: 0;
     }
 }
+
+@mixin section-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+}
