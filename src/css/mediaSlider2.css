@@ -37,41 +37,41 @@ body .container-fluid {
     padding: 0 1rem;
     width: calc(100% - 2rem);
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
     padding: 1rem 2rem;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
     margin: 0 1rem;
     width: calc(100% - 2rem);
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider .image-placeholder {
     height: 120px;
     width: 150px;
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
     padding: 0.5rem 0;
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
     height: 50px;
     margin: 0 1rem;
     width: calc(100% - 2rem);
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column {
     padding: 0 0.5rem;
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
     width: 16px;
     height: 16px;
   }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide .slide-item-parent .item-slide__sub-title {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .item-slide__sub-title {
     font-size: 14px;
     max-width: 120px;
     padding: 0.375rem 0;
@@ -101,6 +101,35 @@ body .container-fluid {
   section.tab-navigation {
     display: none;
   }
+}
+
+@media (max-width: 768px) {
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide,
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next,
+  section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
+  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  section.banner-box-section .banner-content {
+    margin-bottom: 0;
+  }
+  section.banner-box-section .banner-content .grid-boxes-section {
+    display: none;
+  }
   section.best-categorie-icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -117,13 +146,18 @@ body .container-fluid {
             flex-direction: column;
     width: 100%;
     margin: 2rem 0;
-    -ms-flex-direction: row;
-        flex-direction: row;
+  }
+  section.best-categorie-icon .icon-box-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    width: 90%;
+    border-bottom: 1px solid #b8b8b8;
   }
-  section.best-categorie-icon .icon-box {
+  section.best-categorie-icon .icon-box-parent .icon-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144,44 +178,18 @@ body .container-fluid {
     width: 55px;
     height: 55px;
   }
-  section.best-categorie-icon .icon-box .icon-category {
+  section.best-categorie-icon .icon-box-parent .icon-box .icon-category {
     color: white;
     font-size: 24px;
   }
 }
 
-@media (max-width: 768px) {
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide-prev,
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide-next {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  section.dolatsara-slider-section div.dolatsara-slider div.swiper.mySwiper div.swiper-wrapper div.swiper-slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
-  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  section.best-categorie-icon .icon-box {
+@media (max-width: 576px) {
+  section.best-categorie-icon .icon-box-parent .icon-box {
     width: 45px;
     height: 45px;
   }
-  section.best-categorie-icon .icon-box .icon-category {
+  section.best-categorie-icon .icon-box-parent .icon-box .icon-category {
     font-size: 1rem;
   }
 }

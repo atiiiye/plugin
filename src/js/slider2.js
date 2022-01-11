@@ -15,7 +15,6 @@ $(document).ready(function () {
     breakpoints: {
       1200: {
         slidesPerView: 5,
-        centeredSlides: true,
       },
       768: {
         slidesPerView: 3,
@@ -26,10 +25,10 @@ $(document).ready(function () {
         centeredSlides: false,
       },
     },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
   });
 
   var swiper2 = new Swiper(".mySwiper2", {

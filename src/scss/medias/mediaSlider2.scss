@@ -6,7 +6,7 @@
     width: calc(100% - 2rem);
 
     div.dolatsara-slider {
-      div.swiper.mySwiper {
+      div.swiper {
         div.swiper-wrapper {
           div.swiper-slide {
             height: max-content;
@@ -204,43 +204,18 @@
   section.tab-navigation {
     display: none;
   }
-
-  section.best-categorie-icon {
-     @include section-style;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    .icon-box {
-      @include section-style;
-      background-color: rgba($color: $color-purple, $alpha: 1);
-      border-radius: 50%;
-      width: 55px;
-      height: 55px;
-
-      .icon-category {
-        color: rgba($color: $color-light, $alpha: 1);
-        font-size: 24px;
-      }
-    }
-  }
 }
 
 @media (max-width: 768px) {
   section.dolatsara-slider-section {
     div.dolatsara-slider {
-      div.swiper.mySwiper {
+      div.swiper {
         div.swiper-wrapper {
-          div.swiper-slide {
-            transform: scale(1);
-          }
-
+          div.swiper-slide,
           div.swiper-slide-prev,
-          div.swiper-slide-next {
-            transform: scale(1);
-          }
-
+          div.swiper-slide-next,
           div.swiper-slide-active {
-            transform: scale(1);
+            transform: scale(1.0) ;
           }
         }
       }
@@ -268,14 +243,52 @@
     }
   }
 
-  section.best-categorie-icon {
-   .icon-box {
-     width: 45px;
-     height: 45px;
+  section.banner-box-section {
+    .banner-content {
+      margin-bottom: 0;
 
-     .icon-category {
-       font-size:1rem;
-     }
-   }
- }
+      .grid-boxes-section {
+        display: none;
+      }
+    }
+  }
+
+  section.best-categorie-icon {
+    @include section-style;
+
+    .icon-box-parent {
+      display: flex;
+      justify-content: space-evenly;
+      width: 90%;
+      border-bottom: 1px solid rgba($color: $color-gray-4, $alpha: 1);
+
+      .icon-box {
+        @include section-style;
+        background-color: rgba($color: $color-purple, $alpha: 1);
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+
+        .icon-category {
+          color: rgba($color: $color-light, $alpha: 1);
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  section.best-categorie-icon {
+    .icon-box-parent {
+      .icon-box {
+        width: 45px;
+        height: 45px;
+
+        .icon-category {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }

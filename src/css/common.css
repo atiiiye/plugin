@@ -21,7 +21,6 @@ body {
   direction: rtl;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 2rem;
 }
 
 body a:focus {
