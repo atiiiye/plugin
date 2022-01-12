@@ -124,10 +124,10 @@ body .container-fluid {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  section.banner-box-section .banner-content {
+  .banner-content {
     margin-bottom: 0;
   }
-  section.banner-box-section .banner-content .grid-boxes-section {
+  .banner-content .grid-boxes-section {
     display: none;
   }
   section.best-categorie-icon {
