@@ -179,7 +179,7 @@ section.several-row-slider {
             }
 
             .content-box {
-              padding: 1rem;
+              padding: 1rem 1rem 0;
               width: calc(100% - 2rem);
 
               h3.title-item {
@@ -305,8 +305,8 @@ section.single-row-slider {
             }
 
             .content-box {
-              padding: 1rem;
               width: calc(100% - 2rem);
+              padding: 1rem 1rem 0;
 
               h3.title-item {
                 font-weight: 600;
@@ -415,7 +415,7 @@ section.album-slider {
             }
 
             .card-body-slider {
-              padding: 0.5rem 1rem;
+              padding: 0.5rem 1rem 0;
               height: 150px;
 
               .card-body-child {
@@ -560,27 +560,15 @@ section.best-categorie-icon {
   display: none;
 }
 
-section.banner-box-section {
+section.banner-content {
+  height: 100px;
   @include section-style;
-  margin-top: 0;
-}
-
-.banner-content {
-  height: 200px;
-  width: 100%;
-  // background-color: rgba($color: $color-gray, $alpha: 1);
-  // background-image: url("./../images/banner-2.jpg");
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0;
   position: relative;
-  align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 
   .grid-boxes-section {
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -629,51 +617,77 @@ section.banner-box-section {
     }
   }
 }
+
 section.dropdown-section {
   @include section-style;
   align-items: flex-start;
+
+  .dropdown-section__parent {
+    margin-right: 4rem;
+    width: 150px;
+
+    &:hover > ul,
+    &:focus > ul {
+      display: flex;
+    }
+
+    &:hover > div > svg,
+    &:focus > div > svg {
+      transform: rotate(180deg);
+      transition: transform 0.35s ease-in-out;
+      color: rgba($color: $color-dark, $alpha: 0.5);
+    }
+
+    &:hover > div > button,
+    &:focus > div > button {
+      color: rgba($color: $color-dark, $alpha: 0.5);
+      font-weight: 600;
+    }
+  }
 
   .dropdown-section__button-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 100%;
     color: rgba($color: $color-gray-4, $alpha: 1);
     background: rgba($color: $color-gray, $alpha: 1);
     border: 1px solid rgba($color: $color-gray-4, $alpha: 1);
     border-radius: 8px;
     padding: 0.375rem;
-    margin-right: 4rem;
 
     button.dropdown-section-button {
       background: transparent;
-      // padding: .375rem;
       font-family: "Samim";
       border: 0;
+      text-align: right;
       width: 100%;
       color: rgba($color: $color-gray-4, $alpha: 1);
     }
 
     svg {
       font-size: 24px;
+      transform: rotate(0deg);
+      transition: transform 0.35s ease-in-out;
     }
   }
 
   ul.dropdown-section__list {
     flex-direction: column;
-    width: 150px;
+    width: 100%;
     transition: display 0.3s ease-in;
-    margin-right: 4rem;
+    display: none;
 
-    li.dropdown-section__list-item {
+	a.dropdown-section__list-item-link {
       background-color: rgba($color: $color-gray, $alpha: 1);
-      padding: 1rem;
+      padding:.5rem;
       width: 100%;
       max-width: 100%;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      padding: 0.375rem;
+    //   padding: 0.5rem;
+      text-decoration: none;
 
       &:first-child {
         border-top-left-radius: 8px;
@@ -689,16 +703,15 @@ section.dropdown-section {
         background-color: rgba($color: $color-purple, $alpha: 0.5);
       }
 
-      &:hover > a.dropdown-section__list-item-link {
+      &:hover > a {
         color: rgba($color: $color-light, $alpha: 1);
       }
+    }
 
-      a.dropdown-section__list-item-link {
-        text-decoration: none;
-        width: 100%;
-        text-align: center;
-        color: rgba($color: $color-dark, $alpha: 1);
-      }
+	li.dropdown-section__list-item {
+      width: 100%;
+      text-align: right;
+      color: rgba($color: $color-dark, $alpha: 1);
     }
   }
 }

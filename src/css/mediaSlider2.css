@@ -124,10 +124,10 @@ body .container-fluid {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .banner-content {
-    margin-bottom: 0;
+  section.banner-content {
+    display: none;
   }
-  .banner-content .grid-boxes-section {
+  section.banner-content .grid-boxes-section {
     display: none;
   }
   section.best-categorie-icon {
@@ -146,6 +146,7 @@ body .container-fluid {
             flex-direction: column;
     width: 100%;
     margin: 2rem 0;
+    margin: 0;
   }
   section.best-categorie-icon .icon-box-parent {
     display: -webkit-box;

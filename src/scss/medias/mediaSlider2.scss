@@ -215,7 +215,7 @@
           div.swiper-slide-prev,
           div.swiper-slide-next,
           div.swiper-slide-active {
-            transform: scale(1.0) ;
+            transform: scale(1);
           }
         }
       }
@@ -243,10 +243,8 @@
     }
   }
 
-  section.banner-box-section {
-  }
-  .banner-content {
-    margin-bottom: 0;
+  section.banner-content {
+    display: none;
 
     .grid-boxes-section {
       display: none;
@@ -255,6 +253,7 @@
 
   section.best-categorie-icon {
     @include section-style;
+    margin: 0;
 
     .icon-box-parent {
       display: flex;
