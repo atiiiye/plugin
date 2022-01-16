@@ -21,6 +21,19 @@ body {
   direction: rtl;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body a:focus {
@@ -40,7 +53,7 @@ button.view-all {
   color: white;
   width: 100px;
   font-family: "Samim";
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 section.single-advertising-section {
@@ -110,18 +123,19 @@ section.several-advertising-section .advertising-placeholder {
 }
 
 section.space-section {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-top: 1px solid rgba(184, 184, 184, 0.5);
 }
 
 section.space-section h3.space-section-title {
   text-align: center;
-  width: 90%;
+  width: 100%;
   font-size: 1.3rem;
   color: #4a1f61;
   background-color: rgba(184, 184, 184, 0.5);

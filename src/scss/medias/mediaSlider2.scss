@@ -72,6 +72,8 @@
   }
 
   section.several-row-slider {
+    height: max-content;
+
     h2.several-row-slider__title {
     }
 
@@ -208,6 +210,7 @@
   section.dropdown-section {
     @include section-style;
     align-items: flex-start;
+    margin:0;
   
     .dropdown-section__parent {
       margin-right: 4rem;
@@ -306,6 +309,8 @@
 
 @media (max-width: 768px) {
   section.dolatsara-slider-section {
+    height: max-content;
+
     div.dolatsara-slider {
       div.swiper {
         div.swiper-wrapper {

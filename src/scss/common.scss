@@ -8,7 +8,7 @@ button.view-all {
   color: rgba($color: $color-light, $alpha: 1);
   width: 100px;
   font-family: "Samim";
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 section.single-advertising-section {
@@ -63,13 +63,14 @@ section.several-advertising-section {
 }
 
 section.space-section {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
+  border-top: 1px solid  rgba($color: $color-gray-4, $alpha: 0.5);
 
   h3.space-section-title {
     text-align: center;
-    width: 90%;
+    width: 100%;
     font-size: 1.3rem;
     color: rgba($color: $color-purple, $alpha: 1);
     background-color: rgba($color: $color-gray-4, $alpha: 0.5);

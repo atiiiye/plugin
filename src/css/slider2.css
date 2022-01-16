@@ -21,6 +21,19 @@ body {
   direction: rtl;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body a:focus {
@@ -48,6 +61,11 @@ section.dolatsara-slider-section {
           flex-direction: column;
   width: 100%;
   margin: 2rem 0;
+  margin: 0;
+  height: 90vh;
+  background-image: url("./../images/01.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 section.dolatsara-slider-section div.dolatsara-slider {
@@ -61,10 +79,6 @@ section.dolatsara-slider-section div.dolatsara-slider {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 70%;
-  background-image: url("./../images/Banners.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper {
@@ -199,8 +213,7 @@ section.several-row-slider {
           flex-direction: column;
   width: 100%;
   margin: 2rem 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(95%, white)), -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(95%, white)), url("./../images/VectorSmartObjectcopy4.png");
-  background-image: linear-gradient(to bottom, transparent, white 95%), linear-gradient(to top, transparent, white 95%), url("./../images/VectorSmartObjectcopy4.png");
+  background-image: url("./../images/03.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -551,7 +564,7 @@ section.album-slider {
           flex-direction: column;
   width: 100%;
   margin: 2rem 0;
-  background-image: url("./../images/polyganBg.png");
+  background-image: url("./../images/02.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -597,6 +610,8 @@ section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-
   border-top-left-radius: 0.5rem;
   height: 200px;
   width: 100%;
+  font-size: .5rem;
+  text-align: center;
 }
 
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder img {
