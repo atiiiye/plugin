@@ -63,7 +63,6 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
   background-image: linear-gradient(rgba(74, 31, 97, 0.15), transparent 10%);
   transition: all 0.3ms ease-in;
   transform: scale(0.75);
-  margin-top: 2rem;
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
@@ -561,7 +560,7 @@ section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link .tab-navi
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100px;
-  max-width: 100px;
+  max-width: 120px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -603,7 +602,6 @@ section.best-categorie-icon {
 }
 
 section.banner-content {
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;

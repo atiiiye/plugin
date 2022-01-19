@@ -27,7 +27,7 @@ section.dolatsara-slider-section {
               transparent 10%);
           transition: all 0.3ms ease-in;
           transform: scale(0.75);
-          margin-top: 2rem;
+          // margin-top: 2rem;
 
           .slide-item-parent {
             padding: 1rem 2rem;
@@ -510,7 +510,7 @@ section.tab-navigation {
         border-top-right-radius: 8px;
         // height: 30px;
         width: 100px;
-        max-width: 100px;
+        max-width: 120px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -555,7 +555,7 @@ section.best-categorie-icon {
 }
 
 section.banner-content {
-  height: 100px;
+  // height: 100px;
   @include section-style;
   margin: 0;
   position: relative;
