@@ -19,21 +19,7 @@ body {
   background-color: #fff;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  box-sizing: border-box;
 }
 
 body a:focus {
@@ -46,19 +32,10 @@ body .container-fluid {
 }
 
 section.dolatsara-slider-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 2rem 0;
   margin: 0;
@@ -69,15 +46,9 @@ section.dolatsara-slider-section {
 }
 
 section.dolatsara-slider-section div.dolatsara-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -86,16 +57,12 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper {
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-  -webkit-box-shadow: inset 0 0 4px #b8b8b8;
-          box-shadow: inset 0 0 4px #b8b8b8;
+  box-shadow: inset 0 0 4px #b8b8b8;
   border-radius: 12px;
   background-color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 31, 97, 0.15)), color-stop(10%, transparent));
   background-image: linear-gradient(rgba(74, 31, 97, 0.15), transparent 10%);
-  -webkit-transition: all 0.3ms ease-in;
   transition: all 0.3ms ease-in;
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  transform: scale(0.75);
   margin-top: 2rem;
 }
 
@@ -106,19 +73,10 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #b8b8b8;
   padding-bottom: 0.5rem;
   margin: 0 1.5rem;
@@ -150,15 +108,9 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: calc(100% - 3rem);
   height: 50px;
   margin: 0 1.5rem;
@@ -188,29 +140,18 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
-  -webkit-transform: scale(0.88);
-          transform: scale(0.88);
+  transform: scale(0.88);
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 section.several-row-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 2rem 0;
   background-image: url("./../images/03.png");
@@ -224,15 +165,9 @@ section.several-row-slider h2.several-row-slider__title {
 }
 
 section.several-row-slider div.dolatsara-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -241,18 +176,12 @@ section.several-row-slider div.dolatsara-slider div.swiper {
 }
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-  -webkit-box-shadow: inset 0 0 4px #b8b8b8;
-          box-shadow: inset 0 0 4px #b8b8b8;
+  box-shadow: inset 0 0 4px #b8b8b8;
   border-radius: 12px;
   background-color: white;
   height: calc((100% - 30px) / 2);
@@ -261,19 +190,10 @@ section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper di
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
@@ -307,15 +227,9 @@ section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper di
 }
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-bottom: 1px solid #b8b8b8;
   margin-top: 1rem;
@@ -329,30 +243,18 @@ section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper di
 }
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: 1rem 0;
 }
 
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising,
 section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #b8b8b8;
   background-color: #eeeeee;
   border-radius: 8px;
@@ -370,19 +272,10 @@ section.several-row-slider div.dolatsara-slider div.swiper div.swiper-pagination
 }
 
 section.single-row-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 2rem 0;
 }
@@ -403,15 +296,9 @@ section.single-row-slider h2.single-row-slider__title span {
 }
 
 section.single-row-slider div.dolatsara-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -420,18 +307,12 @@ section.single-row-slider div.dolatsara-slider div.swiper {
 }
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-  -webkit-box-shadow: inset 0 0 4px #b8b8b8;
-          box-shadow: inset 0 0 4px #b8b8b8;
+  box-shadow: inset 0 0 4px #b8b8b8;
   border-radius: 12px;
   background-color: white;
   height: calc((100% - 30px) / 2);
@@ -440,19 +321,10 @@ section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
@@ -486,15 +358,9 @@ section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div
 }
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.code-name-advertising-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-bottom: 1px solid #b8b8b8;
   margin-top: 1rem;
@@ -508,30 +374,18 @@ section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div
 }
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: 1rem 0;
 }
 
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.home-advertising,
 section.single-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .content-box div.card-footer-slider p.location-advertising {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #b8b8b8;
   background-color: #eeeeee;
   border-radius: 8px;
@@ -549,19 +403,10 @@ section.single-row-slider div.dolatsara-slider div.swiper div.swiper-pagination.
 }
 
 section.album-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 2rem 0;
   background-image: url("./../images/02.png");
@@ -570,15 +415,9 @@ section.album-slider {
 }
 
 section.album-slider .dolatsara-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -588,14 +427,11 @@ section.album-slider .dolatsara-slider div.swiper {
 }
 
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-  -webkit-box-shadow: 0 0 4px #b8b8b8;
-          box-shadow: 0 0 4px #b8b8b8;
+  box-shadow: 0 0 4px #b8b8b8;
   border-radius: 12px;
   background-color: white;
-  -webkit-transition: all 0.3ms ease-in;
   transition: all 0.3ms ease-in;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   z-index: 10;
   margin-top: 3rem;
 }
@@ -627,15 +463,9 @@ section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-
 }
 
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   border-bottom: 1px solid #b8b8b8;
   padding: 0.5rem 0;
 }
@@ -691,51 +521,34 @@ section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-
 
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+  transform: scale(1.07);
   z-index: 100;
 }
 
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
   z-index: 1000;
-  -webkit-box-shadow: 0 0 4px #b8b8b8;
-          box-shadow: 0 0 4px #b8b8b8;
+  box-shadow: 0 0 4px #b8b8b8;
 }
 
 section.tab-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 2rem 0;
 }
 
 section.tab-navigation .tab-navigation__tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   width: 90%;
 }
 
 section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link {
   text-decoration: none;
-  -webkit-box-shadow: 0 0 4px #b8b8b8;
-          box-shadow: 0 0 4px #b8b8b8;
+  box-shadow: 0 0 4px #b8b8b8;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -775,8 +588,7 @@ section.tab-navigation .tab-navigation__content {
   background-color: #eeeeee;
   border-radius: 12px;
   border-top-right-radius: 0;
-  -webkit-box-shadow: 0 2px 4px #b8b8b8;
-          box-shadow: 0 2px 4px #b8b8b8;
+  box-shadow: 0 2px 4px #b8b8b8;
   display: none;
 }
 
@@ -790,19 +602,11 @@ section.best-categorie-icon {
 }
 
 section.banner-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100px;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   margin: 2rem 0;
   margin: 0;
@@ -812,12 +616,9 @@ section.banner-content {
 
 section.banner-content .grid-boxes-section {
   width: 80%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   position: absolute;
@@ -826,15 +627,9 @@ section.banner-content .grid-boxes-section {
 
 section.banner-content .grid-boxes-section .single-box {
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 section.banner-content .grid-boxes-section .single-box:first-child {
