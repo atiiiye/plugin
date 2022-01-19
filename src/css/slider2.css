@@ -560,6 +560,7 @@ section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link .tab-navi
   border: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  width: 100px;
   max-width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
