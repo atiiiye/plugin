@@ -1,6 +1,17 @@
 @import "./../base";
 
 @media (max-width: 991px) {
+
+  section.dolatsara__main-header {
+    div.dolatsara__all-menu {}
+
+    div.dolatsara__main-content {
+      div.dolatsar__seacrh-tabs {
+        display: none;
+      }
+    }
+  }
+
   section.dolatsara-slider-section {
     padding: 0 1rem;
     width: calc(100% - 2rem);
@@ -23,8 +34,7 @@
                   height: 120px;
                   width: 150px;
 
-                  img {
-                  }
+                  img {}
                 }
 
                 h4.item-slide__title {
@@ -56,11 +66,9 @@
           }
 
           div.swiper-slide-prev,
-          div.swiper-slide-next {
-          }
+          div.swiper-slide-next {}
 
-          div.swiper-slide-active {
-          }
+          div.swiper-slide-active {}
         }
 
         div.swiper-button-prev,
@@ -74,8 +82,7 @@
   section.several-row-slider {
     height: max-content;
 
-    h2.several-row-slider__title {
-    }
+    h2.several-row-slider__title {}
 
     div.dolatsara-slider {
       div.swiper {
@@ -85,25 +92,23 @@
               .image-placeholder {
                 height: 150px;
 
-                img {
-                }
+                img {}
               }
 
               div.content-box {
-                h3.title-item {
-                }
+                h3.title-item {}
 
                 div.code-name-advertising-box {
+
                   p.code-advertising,
-                  p.name-advertising {
-                  }
+                  p.name-advertising {}
                 }
 
                 div.card-footer-slider {
+
                   p.home-advertising,
                   p.location-advertising {
-                    svg.footer-icon {
-                    }
+                    svg.footer-icon {}
                   }
                 }
               }
@@ -129,8 +134,7 @@
 
   section.single-row-slider {
     h2.single-row-slider__title {
-      span {
-      }
+      span {}
     }
 
     div.dolatsara-slider {
@@ -141,15 +145,14 @@
               .image-placeholder {
                 height: 150px;
 
-                img {
-                }
+                img {}
               }
 
               .content-box {
-                h3.title-item {
-                }
+                h3.title-item {}
 
                 div.code-name-advertising-box {
+
                   p.code-advertising,
                   p.name-advertising {
                     margin: 0.5rem 0;
@@ -157,10 +160,10 @@
                 }
 
                 div.card-footer-slider {
+
                   p.home-advertising,
                   p.location-advertising {
-                    svg.footer-icon {
-                    }
+                    svg.footer-icon {}
                   }
                 }
               }
@@ -190,6 +193,7 @@
         width: 90%;
 
         div.swiper-wrapper {
+
           div.swiper-slide-prev,
           div.swiper-slide-next {
             transform: scale(1.025);
@@ -210,31 +214,31 @@
   section.dropdown-section {
     @include section-style;
     align-items: flex-start;
-    margin:0;
-  
+    margin: 0;
+
     .dropdown-section__parent {
       margin-right: 4rem;
       width: 150px;
-  
-      &:hover > ul,
-      &:focus > ul {
+
+      &:hover>ul,
+      &:focus>ul {
         display: flex;
       }
-  
-      &:hover > div > svg,
-      &:focus > div > svg {
+
+      &:hover>div>svg,
+      &:focus>div>svg {
         transform: rotate(180deg);
         transition: transform 0.35s ease-in-out;
         color: rgba($color: $color-dark, $alpha: 0.5);
       }
-  
-      &:hover > div > button,
-      &:focus > div > button {
+
+      &:hover>div>button,
+      &:focus>div>button {
         color: rgba($color: $color-dark, $alpha: 0.5);
         font-weight: 600;
       }
     }
-  
+
     .dropdown-section__button-box {
       display: flex;
       justify-content: space-between;
@@ -245,7 +249,7 @@
       border: 1px solid rgba($color: $color-gray-4, $alpha: 1);
       border-radius: 8px;
       padding: 0.375rem;
-  
+
       button.dropdown-section-button {
         background: transparent;
         font-family: "Samim";
@@ -254,51 +258,51 @@
         width: 100%;
         color: rgba($color: $color-gray-4, $alpha: 1);
       }
-  
+
       svg {
         font-size: 24px;
         transform: rotate(0deg);
         transition: transform 0.35s ease-in-out;
       }
     }
-  
+
     ul.dropdown-section__list {
       flex-direction: column;
       width: 100%;
       transition: display 0.3s ease-in;
       display: none;
-  
-    a.dropdown-section__list-item-link {
+
+      a.dropdown-section__list-item-link {
         background-color: rgba($color: $color-gray, $alpha: 1);
-        padding:.5rem;
+        padding: .5rem;
         width: 100%;
         max-width: 100%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-      //   padding: 0.5rem;
+        //   padding: 0.5rem;
         text-decoration: none;
-  
+
         &:first-child {
           border-top-left-radius: 8px;
           border-top-right-radius: 8px;
         }
-  
+
         &:last-child {
           border-bottom-left-radius: 8px;
           border-bottom-right-radius: 8px;
         }
-  
+
         &:hover {
           background-color: rgba($color: $color-purple, $alpha: 0.5);
         }
-  
-        &:hover > a {
+
+        &:hover>a {
           color: rgba($color: $color-light, $alpha: 1);
         }
       }
-  
-    li.dropdown-section__list-item {
+
+      li.dropdown-section__list-item {
         width: 100%;
         text-align: right;
         color: rgba($color: $color-dark, $alpha: 1);
@@ -314,6 +318,7 @@
     div.dolatsara-slider {
       div.swiper {
         div.swiper-wrapper {
+
           div.swiper-slide,
           div.swiper-slide-prev,
           div.swiper-slide-next,

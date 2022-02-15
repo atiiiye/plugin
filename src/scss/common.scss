@@ -3,12 +3,13 @@
 button.view-all {
   background-color: $color-purple;
   border: 0;
-  padding: 0.375rem;
+  padding: 0.35rem;
   border-radius: 4px;
   color: rgba($color: $color-light, $alpha: 1);
-  width: 100px;
+  width: 140px;
   font-family: "Samim";
   margin: 2rem 0;
+  font-size: 90%;
 }
 
 section.single-advertising-section {
