@@ -288,6 +288,9 @@ body .container-fluid {
     width: 100px;
     font-size: 12px;
   }
+  section.dolatsara__main-header div.dolatsara__box-icons {
+    padding: 1rem 0;
+  }
   section.best-categorie-icon .icon-box-parent .icon-box {
     width: 45px;
     height: 45px;
