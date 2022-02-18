@@ -14,6 +14,20 @@
   src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
 }
 
+html ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(151, 151, 151, 0.2);
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: rgba(151, 151, 151, 0.75);
+}
+
 body {
   font-family: 'Samim';
   background-color: #fff;
@@ -250,12 +264,44 @@ body .container-fluid {
 }
 
 @media (max-width: 576px) {
-  section.best-categorie-icon .icon-box-parent .icon-box {
+  section.dolatsara__main-header div.dolatsara__all-menu {
+    padding: .5rem;
+  }
+  section.dolatsara__main-header div.dolatsara__all-menu div.dolatsara__left-menu a.dolatsara__phone {
+    width: 115px;
+  }
+  section.dolatsara__main-header div.dolatsara__all-menu div.dolatsara__left-menu a.dolatsara__phone strong {
+    font-size: 1rem;
+  }
+  section.dolatsara__main-header div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button {
+    margin-right: .5rem;
+    width: 55px;
+  }
+  section.dolatsara__main-header div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button svg {
+    margin-right: .5rem;
+  }
+  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
+    width: 300px;
+  }
+  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
+    width: 100px;
+    font-size: 12px;
+  }
+  section.dolatsara__main-header section.best-categorie-icon .icon-box-parent .icon-box {
     width: 45px;
     height: 45px;
   }
-  section.best-categorie-icon .icon-box-parent .icon-box .icon-category {
+  section.dolatsara__main-header section.best-categorie-icon .icon-box-parent .icon-box .icon-category {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
+    width: 300px;
+  }
+  div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
+    width: 80px;
   }
 }
 /*# sourceMappingURL=mediaDolatsara.css.map */

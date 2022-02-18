@@ -14,6 +14,20 @@
   src: url(../fonts/samim/Farsi-Digits/Samim-FD.eot) format("embedded-opentype"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff2) format("woff2"), url(../fonts/samim/Farsi-Digits/Samim-FD.woff) format("woff"), url(../fonts/samim/Farsi-Digits/Samim-FD.ttf) format("truetype");
 }
 
+html ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(151, 151, 151, 0.2);
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: rgba(151, 151, 151, 0.75);
+}
+
 body {
   font-family: 'Samim';
   background-color: #fff;

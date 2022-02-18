@@ -16,16 +16,28 @@ $color-selected:#00bfd6;
 $color-purple : #4a1f61;
 $color-gray-4:#b8b8b8;
 
+html {
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba($color: $color-gray-2, $alpha: .2);
+        border-radius: 10px;
+
+        &:hover {
+            background: rgba($color: $color-gray-2, $alpha: .75);
+        }
+    }
+}
+
 body {
     font-family: 'Samim';
     background-color: $color-light;
     font-size: 100%;
     direction: rtl;
     box-sizing: border-box;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
 
     a:focus {
         outline: 0;

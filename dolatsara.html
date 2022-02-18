@@ -23,9 +23,10 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- Link fontawesome CSS -->
-  <link href="./src/css/all.min.css" rel="stylesheet" />
 
+  <!-- Link fontawesome CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./src/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -34,19 +35,11 @@
       <nav class="navbar navbar-expand-lg dolatsara__right-menu">
         <button class="navbar-toggler dolatsara__toggle-button" type="button" data-bs-toggle="collapse"
           data-bs-target="#dolatsara__menu-list">
-          <!-- <span class="navbar-toggler-icon"> -->
-          <!-- <span className="menu navbar-toggler-icon"> -->
-          <!-- <div className="menu-line menu-line-1"></div>
-            <div className="menu-line menu-line-2"></div>
-            <div className="menu-line menu-line-3"></div>
-          </span> -->
-          <!-- </span> -->
-
           <span class="menu navbar-toggler-icon ti-menu"></span>
-
         </button>
+
         <div class="collapse navbar-collapse" id="dolatsara__menu-list">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 dolatsara__menu">
             <li class="nav-item dolatsara__menu-item">
               <a class="nav-link" href="#">کل آگهی ها</a>
             </li>
@@ -56,8 +49,17 @@
             <li class="nav-item dolatsara__menu-item">
               <a class="nav-link" href="#">ثبت درخواست خرید</a>
             </li>
-            <li class="nav-item dolatsara__menu-item">
-              <a class="nav-link" href="#">مجله دولتسرا</a>
+
+            <li class="nav-item dolatsara__menu-item dropdown">
+              <a class="nav-link" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
+                مجله دولتسرا
+                <i class="fa fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu dolatsara__sub-menu">
+                <li class="dolatsara__sub-menu-item"><a class="dropdown-item" href="#">آگهی های من</a></li>
+                <li class="dolatsara__sub-menu-item"><a class="dropdown-item" href="#">درخواست های من</a></li>
+                <li class="dolatsara__sub-menu-item"><a class="dropdown-item" href="#">بازدیدهای اخیر</a></li>
+              </ul>
             </li>
             <li class="nav-item dolatsara__menu-item">
               <a class="nav-link" href="#">لیست کسب و کارها</a>
@@ -67,13 +69,134 @@
       </nav>
 
       <div class="dolatsara__left-menu">
+
+        <button class="dolatsara__city-button" data-bs-toggle="modal" data-bs-target="#city-modal">
+          3شهر
+          <i class="material-icons">location_on</i>
+        </button>
+
+        <div class="modal fade dolatsara__city-modal" id="city-modal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">انتخاب شهر</h5>
+                <span>حداقل یک شهر را انتخاب کنید.</span>
+              </div>
+              <form class="dolatsara__city-modal-form">
+                <div class="modal-body">
+                  <i class="fa fa-search search-icon"></i>
+                  <input type="text" class="dolatsara__search-city" placeholder="جستجو در شهرها">
+
+                  <ul class="dolatsara__city-list">
+                    <li class="dolatsara__city-list-item">
+                      <label for="tehran" class="">
+                        تهران
+                        <input type="checkbox" name="city-name" id="tehran">
+                      </label>
+                    </li>
+                    <li class="dolatsara__city-list-item">
+                      <label for="arak" class="">
+                        اراک
+                        <input type="checkbox" name="city-name" id="arak">
+                      </label>
+                    </li>
+                    <li class="dolatsara__city-list-item">
+                      <label for="shiraz" class="">
+                        شیراز
+                        <input type="checkbox" name="city-name" id="shiraz">
+                      </label>
+                    </li>
+                    <li class="dolatsara__city-list-item">
+                      <label for="sari" class="">
+                        ساری
+                        <input type="checkbox" name="city-name" id="sari">
+                      </label>
+                    </li>
+                    <li class="dolatsara__city-list-item">
+                      <label for="mashhad" class="">
+                        مشهد
+                        <input type="checkbox" name="city-name" id="mashhad">
+                      </label>
+                    </li>
+                    <li class="dolatsara__city-list-item">
+                      <label for="yazd" class="">
+                        یزد
+                        <input type="checkbox" name="city-name" id="yazd">
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="dolatsara__cancel-button" data-bs-dismiss="modal">انصراف</button>
+                  <button type="button" class="dolatsara__confirm-button">تایید</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <a href="tel:02122254171" class="dolatsara__phone">
           <strong>22254171</strong>
           <small>-021</small>
         </a>
-        <button type="button" class="dolatsara__setting-button">
-          <i class="fa fa-cog"></i>
-        </button>
+        <div class="dropdown dolatsara__setting-list">
+          <button type="button" class="dolatsara__setting-button" data-bs-toggle="dropdown">
+            <i class="fa fa-cog"></i>
+          </button>
+          <ul class="dropdown-menu dolatsara__setting-list-icons">
+            <div class="row">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 1
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 2
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 3
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 4
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 1
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 2
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 3
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-address-card"></i>
+                  آیکون 4
+                </a>
+              </li>
+
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
 
