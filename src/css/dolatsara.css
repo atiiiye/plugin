@@ -60,10 +60,14 @@ section.dolatsara__main-header {
 section.dolatsara__main-header div.dolatsara__all-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 1rem 2rem;
   background: rgba(184, 184, 184, 0.25);
+}
+
+section.dolatsara__main-header div.dolatsara__all-menu nav.dolatsara__right-menu {
+  padding-top: 0;
 }
 
 section.dolatsara__main-header div.dolatsara__all-menu nav.dolatsara__right-menu button.dolatsara__toggle-button {

@@ -9,12 +9,14 @@ section.dolatsara__main-header {
   div.dolatsara__all-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding: 1rem 2rem;
     background: rgba($color: $color-gray-4, $alpha: .25);
 
     nav.dolatsara__right-menu {
+      padding-top: 0;
+
       button.dolatsara__toggle-button {
         background-color: rgba($color: $color-gray-4, $alpha: .5);
 
