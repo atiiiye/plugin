@@ -401,7 +401,8 @@
 
       div.dolatsara__left-menu {
         a.dolatsara__phone {
-          width: 115px;
+          width: 100px;
+          text-align: left;
 
           strong {
             font-size: 1rem;
@@ -436,37 +437,38 @@
         }
       }
     }
+  }
 
-    section.best-categorie-icon {
-      .icon-box-parent {
-        .icon-box {
-          width: 45px;
-          height: 45px;
+  section.best-categorie-icon {
+    .icon-box-parent {
+      .icon-box {
+        width: 45px;
+        height: 45px;
 
-          .icon-category {
-            font-size: 1rem;
-          }
+        .icon-category {
+          font-size: 1rem;
         }
       }
     }
   }
 }
 
+
 @media (max-width: 425px) {
 
   section.dolatsara__main-header {
     div.dolatsara__all-menu {}
-  }
 
-  div.dolatsara__main-content {
-    div.dolatsara__forms-box {
-      form {
-        input.dolatsara__search-input {
-          width: 300px;
-        }
+    div.dolatsara__main-content {
+      div.dolatsara__forms-box {
+        form {
+          input.dolatsara__search-input {
+            width: 200px;
+          }
 
-        button.dolatsara__instant-ads-button {
-          width: 80px;
+          button.dolatsara__instant-ads-button {
+            width: 80px;
+          }
         }
       }
     }

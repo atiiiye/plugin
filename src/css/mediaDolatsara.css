@@ -268,7 +268,8 @@ body .container-fluid {
     padding: .5rem;
   }
   section.dolatsara__main-header div.dolatsara__all-menu div.dolatsara__left-menu a.dolatsara__phone {
-    width: 115px;
+    width: 100px;
+    text-align: left;
   }
   section.dolatsara__main-header div.dolatsara__all-menu div.dolatsara__left-menu a.dolatsara__phone strong {
     font-size: 1rem;
@@ -287,20 +288,20 @@ body .container-fluid {
     width: 100px;
     font-size: 12px;
   }
-  section.dolatsara__main-header section.best-categorie-icon .icon-box-parent .icon-box {
+  section.best-categorie-icon .icon-box-parent .icon-box {
     width: 45px;
     height: 45px;
   }
-  section.dolatsara__main-header section.best-categorie-icon .icon-box-parent .icon-box .icon-category {
+  section.best-categorie-icon .icon-box-parent .icon-box .icon-category {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 425px) {
-  div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
-    width: 300px;
+  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
+    width: 200px;
   }
-  div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
+  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
     width: 80px;
   }
 }
