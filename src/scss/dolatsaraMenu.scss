@@ -212,11 +212,11 @@ header.dolatsara__menu {
           display: flex;
 
           svg,
-          i {
+          i, img {
             margin-right: 1rem;
             color: rgba($color: $color-purple, $alpha: 1);
-            width: 40px;
-            height: 40px;
+            max-width: 40px;
+            max-height: 40px;
           }
         }
 

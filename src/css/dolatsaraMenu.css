@@ -279,11 +279,11 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button svg,
-header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button i {
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button i, header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button img {
   margin-right: 1rem;
   color: #4a1f61;
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list ul.dolatsara__setting-list-icons {
