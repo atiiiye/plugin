@@ -1,6 +1,14 @@
 @import "./../base";
 
 @media (max-width: 991px) {
+  section.dolatsara__main-header {
+    div.dolatsara__main-content {
+      div.dolatsar__seacrh-tabs {
+        display: none;
+      }
+    }
+  }
+
   section.dolatsara-slider-section {
     padding: 0 1rem;
     width: calc(100% - 2rem);
@@ -23,7 +31,8 @@
                   height: 120px;
                   width: 150px;
 
-                  img {}
+                  img {
+                  }
                 }
 
                 h4.item-slide__title {
@@ -55,9 +64,11 @@
           }
 
           div.swiper-slide-prev,
-          div.swiper-slide-next {}
+          div.swiper-slide-next {
+          }
 
-          div.swiper-slide-active {}
+          div.swiper-slide-active {
+          }
         }
 
         div.swiper-button-prev,
@@ -71,7 +82,8 @@
   section.several-row-slider {
     height: max-content;
 
-    h2.several-row-slider__title {}
+    h2.several-row-slider__title {
+    }
 
     div.dolatsara-slider {
       div.swiper {
@@ -81,23 +93,25 @@
               .image-placeholder {
                 height: 150px;
 
-                img {}
+                img {
+                }
               }
 
               div.content-box {
-                h3.title-item {}
+                h3.title-item {
+                }
 
                 div.code-name-advertising-box {
-
                   p.code-advertising,
-                  p.name-advertising {}
+                  p.name-advertising {
+                  }
                 }
 
                 div.card-footer-slider {
-
                   p.home-advertising,
                   p.location-advertising {
-                    svg.footer-icon {}
+                    svg.footer-icon {
+                    }
                   }
                 }
               }
@@ -123,7 +137,8 @@
 
   section.single-row-slider {
     h2.single-row-slider__title {
-      span {}
+      span {
+      }
     }
 
     div.dolatsara-slider {
@@ -134,14 +149,15 @@
               .image-placeholder {
                 height: 150px;
 
-                img {}
+                img {
+                }
               }
 
               .content-box {
-                h3.title-item {}
+                h3.title-item {
+                }
 
                 div.code-name-advertising-box {
-
                   p.code-advertising,
                   p.name-advertising {
                     margin: 0.5rem 0;
@@ -149,10 +165,10 @@
                 }
 
                 div.card-footer-slider {
-
                   p.home-advertising,
                   p.location-advertising {
-                    svg.footer-icon {}
+                    svg.footer-icon {
+                    }
                   }
                 }
               }
@@ -182,7 +198,6 @@
         width: 90%;
 
         div.swiper-wrapper {
-
           div.swiper-slide-prev,
           div.swiper-slide-next {
             transform: scale(1.025);
@@ -209,20 +224,20 @@
       margin-right: 4rem;
       width: 150px;
 
-      &:hover>ul,
-      &:focus>ul {
+      &:hover > ul,
+      &:focus > ul {
         display: flex;
       }
 
-      &:hover>div>svg,
-      &:focus>div>svg {
+      &:hover > div > svg,
+      &:focus > div > svg {
         transform: rotate(180deg);
         transition: transform 0.35s ease-in-out;
         color: rgba($color: $color-dark, $alpha: 0.5);
       }
 
-      &:hover>div>button,
-      &:focus>div>button {
+      &:hover > div > button,
+      &:focus > div > button {
         color: rgba($color: $color-dark, $alpha: 0.5);
         font-weight: 600;
       }
@@ -263,7 +278,7 @@
 
       a.dropdown-section__list-item-link {
         background-color: rgba($color: $color-gray, $alpha: 1);
-        padding: .5rem;
+        padding: 0.5rem;
         width: 100%;
         max-width: 100%;
         white-space: nowrap;
@@ -286,7 +301,7 @@
           background-color: rgba($color: $color-purple, $alpha: 0.5);
         }
 
-        &:hover>a {
+        &:hover > a {
           color: rgba($color: $color-light, $alpha: 1);
         }
       }
@@ -307,7 +322,6 @@
     div.dolatsara-slider {
       div.swiper {
         div.swiper-wrapper {
-
           div.swiper-slide,
           div.swiper-slide-prev,
           div.swiper-slide-next,
@@ -375,6 +389,27 @@
 }
 
 @media (max-width: 576px) {
+  section.dolatsara__main-header {
+    div.dolatsara__main-content {
+      div.dolatsara__forms-box {
+        form {
+          input.dolatsara__search-input {
+            width: 300px;
+          }
+
+          button.dolatsara__instant-ads-button {
+            width: 100px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    div.dolatsara__box-icons {
+      padding: 1rem 0;
+    }
+  }
+
   section.best-categorie-icon {
     .icon-box-parent {
       .icon-box {
@@ -383,6 +418,24 @@
 
         .icon-category {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  section.dolatsara__main-header {
+    div.dolatsara__main-content {
+      div.dolatsara__forms-box {
+        form {
+          input.dolatsara__search-input {
+            width: 200px;
+          }
+
+          button.dolatsara__instant-ads-button {
+            width: 80px;
+          }
         }
       }
     }

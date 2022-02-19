@@ -142,6 +142,7 @@ $(document).ready(function () {
 
   const tabButton = document.querySelectorAll(".tab-navigation__tab-btn");
   const tabContent = document.querySelectorAll(".tab-navigation__content");
+  
   tabContent[1].style.display = "block";
 
   tabButton.forEach((item, index) => {
@@ -186,7 +187,9 @@ $(document).ready(function () {
 
     for (let i = 0; i < li.length; i++) {
         let label = li[i].getElementsByTagName("label")[0];
+
         txtValue = label.textContent || label.innerText;
+        
         if (txtValue.indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
