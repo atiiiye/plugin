@@ -4,7 +4,6 @@ $color-light:#fff;
 $color-light-2:#faf6fb;
 $color-gray:#eeeeee;
 $color-gray-2:#979797;
-$color-gray-2-2:#ADB0B3;
 $color-gray-3:#3e3f3f;
 $color-error:#ef5662;
 $color-dark:#000000;
@@ -16,6 +15,7 @@ $color-selected:#00bfd6;
 //dolatsara
 $color-purple : #4a1f61;
 $color-gray-4:#b8b8b8;
+$color-gray-2-2:#ADB0B3;
 
 html {
     ::-webkit-scrollbar {
@@ -24,11 +24,11 @@ html {
     }
 
     ::-webkit-scrollbar-thumb {
-        background: rgba($color: $color-gray-2, $alpha: .2);
+        background: rgba($color: $color-gray-3, $alpha: .2);
         border-radius: 10px;
 
         &:hover {
-            background: rgba($color: $color-gray-2, $alpha: .75);
+            background: rgba($color: $color-gray-3, $alpha: .5);
         }
     }
 }

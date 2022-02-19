@@ -15,17 +15,17 @@
 }
 
 html ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 html ::-webkit-scrollbar-thumb {
-  background: rgba(151, 151, 151, 0.2);
+  background: rgba(62, 63, 63, 0.2);
   border-radius: 10px;
 }
 
 html ::-webkit-scrollbar-thumb:hover {
-  background: rgba(151, 151, 151, 0.75);
+  background: rgba(62, 63, 63, 0.5);
 }
 
 body {

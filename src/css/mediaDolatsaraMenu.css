@@ -1,9 +1,3 @@
-@media (max-width: 991px) {
-  section.dolatsara__main-header div.dolatsara__main-content div.dolatsar__seacrh-tabs {
-    display: none;
-  }
-}
-
 @media (max-width: 576px) {
   header.dolatsara__menu div.dolatsara__all-menu {
     padding: 0.5rem;
@@ -21,25 +15,6 @@
   }
   header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button svg {
     margin-right: 0.5rem;
-  }
-  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
-    width: 300px;
-  }
-  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
-    width: 100px;
-    font-size: 12px;
-  }
-  section.dolatsara__main-header div.dolatsara__box-icons {
-    padding: 1rem 0;
-  }
-}
-
-@media (max-width: 425px) {
-  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
-    width: 200px;
-  }
-  section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
-    width: 80px;
   }
 }
 /*# sourceMappingURL=mediaDolatsaraMenu.css.map */
