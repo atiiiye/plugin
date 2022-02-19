@@ -340,9 +340,10 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   color: black;
 }
 
-header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list ul.dolatsara__setting-list-icons div.row li a svg {
-  width: 50px;
-  height: 50px;
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list ul.dolatsara__setting-list-icons div.row li a svg, header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list ul.dolatsara__setting-list-icons div.row li a i, header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list ul.dolatsara__setting-list-icons div.row li a img {
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 32px;
   color: #4a1f61;
 }
 /*# sourceMappingURL=dolatsaraMenu.css.map */
