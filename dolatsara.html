@@ -14,10 +14,12 @@
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/dolatsara.css" />
   <link rel="stylesheet" href="./src/css/common.css" />
-
+  <link rel="stylesheet" href="./src/css/dolatsaraMenu.css" />
+  
   <!-- medias -->
   <link rel="stylesheet" href="./src/css/mediaDolatsara.css" />
   <link rel="stylesheet" href="./src/css/mediaCommon.css" />
+  <link rel="stylesheet" href="./src/css/mediaDolatsaraMenu.css" />
 
   <link rel="stylesheet" href="./src/css/themify-icons.css" />
 
@@ -30,14 +32,15 @@
 </head>
 
 <body>
-  <section class="dolatsara__main-header">
+
+  <header class="dolatsara__menu">
     <div class="dolatsara__all-menu">
       <nav class="navbar navbar-expand-lg dolatsara__right-menu">
         <button class="navbar-toggler dolatsara__toggle-button" type="button" data-bs-toggle="collapse"
           data-bs-target="#dolatsara__menu-list">
           <span class="menu navbar-toggler-icon ti-menu"></span>
         </button>
-
+  
         <div class="collapse navbar-collapse" id="dolatsara__menu-list">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 dolatsara__menu">
             <li class="nav-item dolatsara__menu-item">
@@ -49,7 +52,7 @@
             <li class="nav-item dolatsara__menu-item">
               <a class="nav-link" href="#">ثبت درخواست خرید</a>
             </li>
-
+  
             <li class="nav-item dolatsara__menu-item dropdown">
               <a class="nav-link" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
                 مجله دولتسرا
@@ -67,14 +70,14 @@
           </ul>
         </div>
       </nav>
-
+  
       <div class="dolatsara__left-menu">
-
+  
         <button class="dolatsara__city-button" data-bs-toggle="modal" data-bs-target="#city-modal">
           3شهر
           <i class="material-icons">location_on</i>
         </button>
-
+  
         <div class="modal fade dolatsara__city-modal" id="city-modal">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -86,7 +89,7 @@
                 <div class="modal-body">
                   <i class="fa fa-search search-icon"></i>
                   <input type="text" class="dolatsara__search-city" placeholder="جستجو در شهرها">
-
+  
                   <ul class="dolatsara__city-list">
                     <li class="dolatsara__city-list-item">
                       <label for="tehran" class="">
@@ -134,7 +137,7 @@
             </div>
           </div>
         </div>
-
+  
         <a href="tel:02122254171" class="dolatsara__phone">
           <strong>22254171</strong>
           <small>-021</small>
@@ -193,13 +196,15 @@
                   آیکون 4
                 </a>
               </li>
-
+  
             </div>
           </ul>
         </div>
       </div>
     </div>
 
+  </header>
+  <section class="dolatsara__main-header">
     <div class="dolatsara__main-content">
       <div class="image-placeholder">
         <img src="./src/images/logo.png" alt="dolatsara" />
