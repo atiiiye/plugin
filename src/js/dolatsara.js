@@ -137,6 +137,9 @@ $(document).ready(function () {
     // },
   });
 
+
+  //**** navigation ****//
+
   const tabButton = document.querySelectorAll(".tab-navigation__tab-btn");
   const tabContent = document.querySelectorAll(".tab-navigation__content");
   tabContent[1].style.display = "block";
@@ -158,4 +161,37 @@ $(document).ready(function () {
 
     document.getElementById(contentTab).style.display = "block";
   };
+
+
+  //****search city ****//
+
+  let confirmButton = document.querySelector('button.dolatsara__confirm-button')
+  let form = document.querySelector('form.dolatsara__city-modal-form')
+
+  confirmButton.addEventListener('click', () => {
+    console.log('form submited')
+    form.submit()
+  })
+
+  let searchCityInput = document.getElementById("search-city");
+  searchCityInput.addEventListener('input' , (event)=>{
+    searchCity()
+  })
+
+  function searchCity() {
+    let txtValue;
+    let ul = document.getElementById("dolatsara__city-list");
+    let li = ul.getElementsByTagName("li");
+    let filter = searchCityInput.value;
+
+    for (let i = 0; i < li.length; i++) {
+        let label = li[i].getElementsByTagName("label")[0];
+        txtValue = label.textContent || label.innerText;
+        if (txtValue.indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 });
