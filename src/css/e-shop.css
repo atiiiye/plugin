@@ -15,8 +15,8 @@
 }
 
 html ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 html ::-webkit-scrollbar-thumb {
@@ -195,7 +195,8 @@ section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-sta
   cursor: default;
 }
 
-section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item input[name="shipping-time-input"]:checked + label.shipping-time-hour-list-label > span.shipping-time__hour-list-scope {
+section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item input[name="shipping-time-input"]:checked + label.shipping-time-hour-list-label
+> span.shipping-time__hour-list-scope {
   color: #00bfd6;
 }
 
@@ -225,5 +226,51 @@ section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-sta
 section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item label.shipping-time-hour-list-label span.shipping-time__hour-list-price {
   font-size: 14px;
   color: #979797;
+}
+
+section.radio-inputs {
+  position: relative;
+}
+
+section.radio-inputs input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+section.radio-inputs label {
+  color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+section.radio-inputs input[type="radio"]:checked + label.confirm {
+  color: #f0fff7;
+  background: #00bd56;
+  border-left: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+section.radio-inputs input[type="radio"]:checked + label.pending {
+  color: white;
+  background: #b8b8b8;
+  border-left: solid 2px rgba(0, 0, 0, 0.7);
+  border-right: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+section.radio-inputs input[type="radio"]:checked + label.rejected {
+  color: white;
+  background: #ef5662;
+  border-left: solid 2px #ef5662;
+  border-right: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+section.radio-inputs .radio-group {
+  border: solid 2px rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=e-shop.css.map */

@@ -13,7 +13,6 @@ section.shipping-time {
   }
 
   div.owl-nav {
-
     button.owl-prev,
     button.owl-next {
       position: absolute;
@@ -103,12 +102,12 @@ section.shipping-time {
                 text-align: center;
                 width: 140px;
 
-                &:nth-child(1)>label.shipping-time-hour-list-label {
+                &:nth-child(1) > label.shipping-time-hour-list-label {
                   border-top-right-radius: 8px;
                   border-bottom-right-radius: 8px;
                 }
 
-                &:last-child>label.shipping-time-hour-list-label {
+                &:last-child > label.shipping-time-hour-list-label {
                   border-top-left-radius: 8px;
                   border-bottom-left-radius: 8px;
                 }
@@ -116,15 +115,20 @@ section.shipping-time {
                 input[name="shipping-time-input"] {
                   display: none;
 
-                  &:checked+label.shipping-time-hour-list-label {
+                  &:checked + label.shipping-time-hour-list-label {
                     border: 3px solid rgba($color: $color-selected, $alpha: 1);
-                    box-shadow: 0 8px 13px -8px rgba($color: $color-selected, $alpha: 0.3);
-                    background-color: rgba($color: $color-selected,
-                        $alpha: 0.03);
+                    box-shadow: 0 8px 13px -8px rgba($color: $color-selected, $alpha:
+                          0.3);
+                    background-color: rgba(
+                      $color: $color-selected,
+                      $alpha: 0.03
+                    );
                     cursor: default;
                   }
 
-                  &:checked+label.shipping-time-hour-list-label>span.shipping-time__hour-list-scope {
+                  &:checked
+                    + label.shipping-time-hour-list-label
+                    > span.shipping-time__hour-list-scope {
                     color: rgba($color: $color-selected, $alpha: 1);
                   }
                 }
@@ -155,5 +159,55 @@ section.shipping-time {
         }
       }
     }
+  }
+}
+
+section.radio-inputs {
+  position: relative;
+
+  input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+
+  label {
+    color: rgba($color: $color-dark, $alpha: .7);
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  input[type="radio"]:checked + label.confirm {
+    color: lighten($color-success, 60%);
+    background: $color-success;
+    // border-left: solid 2px $color-success;
+    border-left: solid 2px rgba($color: $color-dark, $alpha: .7);
+  }
+
+  input[type="radio"]:checked + label.pending {
+    color: lighten($color-gray-4, 60%);
+    background: $color-gray-4;
+    border-left:solid 2px rgba($color: $color-dark, $alpha: .7);
+    border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
+  }
+
+  input[type="radio"]:checked + label.rejected {
+    color: lighten($color-error, 60%);
+    background: $color-error;
+    border-left: solid 2px $color-error;
+    border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
+  }
+
+  // label + input[type="radio"] + label {
+  //   border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
+  // }
+  .radio-group {
+    border: solid 2px rgba($color: $color-dark, $alpha: .7);
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
