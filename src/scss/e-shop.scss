@@ -177,6 +177,7 @@ section.radio-inputs {
     cursor: pointer;
     padding: 6px 10px;
     font-size: 12px;
+    user-select: none;
   }
 
   input[type="radio"]:checked + label.confirm {
