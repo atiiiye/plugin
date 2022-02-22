@@ -182,7 +182,6 @@ section.radio-inputs {
   input[type="radio"]:checked + label.confirm {
     color: lighten($color-success, 60%);
     background: $color-success;
-    // border-left: solid 2px $color-success;
     border-left: solid 2px rgba($color: $color-dark, $alpha: .7);
   }
 
@@ -200,9 +199,6 @@ section.radio-inputs {
     border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
   }
 
-  // label + input[type="radio"] + label {
-  //   border-right: solid 2px rgba($color: $color-dark, $alpha: .7);
-  // }
   .radio-group {
     border: solid 2px rgba($color: $color-dark, $alpha: .7);
     display: inline-block;

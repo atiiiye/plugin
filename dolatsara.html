@@ -29,6 +29,9 @@
   <!-- Link fontawesome CSS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./src/css/all.min.css" rel="stylesheet" />
+
+  <!-- Link select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -82,48 +85,48 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">انتخاب شهر</h5>
-                <span>حداقل یک شهر را انتخاب کنید.</span>
+                <span class="dolatsara__selected-city">حداقل یک شهر را انتخاب کنید.</span>
               </div>
               <form class="dolatsara__city-modal-form">
                 <div class="modal-body">
                   <i class="fa fa-search search-icon"></i>
                   <input type="text" class="dolatsara__search-city" placeholder="جستجو در شهرها"  id="search-city">
-  
+
                   <ul class="dolatsara__city-list" id="dolatsara__city-list">
                     <li class="dolatsara__city-list-item">
                       <label for="tehran" class="">
                         تهران
-                        <input type="checkbox" name="city-name" id="tehran">
+                        <input type="checkbox" name="city-name" id="tehran" class="city-name" value="تهران">
                       </label>
                     </li>
                     <li class="dolatsara__city-list-item">
                       <label for="arak" class="">
                         اراک
-                        <input type="checkbox" name="city-name" id="arak">
+                        <input type="checkbox" name="city-name" id="arak" class="city-name" value="اراک">
                       </label>
                     </li>
                     <li class="dolatsara__city-list-item">
                       <label for="shiraz" class="">
                         شیراز
-                        <input type="checkbox" name="city-name" id="shiraz">
+                        <input type="checkbox" name="city-name" id="shiraz" class="city-name" value="شیراز">
                       </label>
                     </li>
                     <li class="dolatsara__city-list-item">
                       <label for="sari" class="">
                         ساری
-                        <input type="checkbox" name="city-name" id="sari">
+                        <input type="checkbox" name="city-name" id="sari" class="city-name" value="ساری">
                       </label>
                     </li>
                     <li class="dolatsara__city-list-item">
                       <label for="mashhad" class="">
                         مشهد
-                        <input type="checkbox" name="city-name" id="mashhad">
+                        <input type="checkbox" name="city-name" id="mashhad" class="city-name" value="مشهد">
                       </label>
                     </li>
                     <li class="dolatsara__city-list-item">
                       <label for="yazd" class="">
                         یزد
-                        <input type="checkbox" name="city-name" id="yazd">
+                        <input type="checkbox" name="city-name" id="yazd" class="city-name" value="یزد">
                       </label>
                     </li>
                   </ul>
@@ -1309,6 +1312,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
+
+    <!--select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </body>
 
 </html>

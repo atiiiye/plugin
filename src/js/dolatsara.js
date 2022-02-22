@@ -169,6 +169,25 @@ $(document).ready(function () {
   );
   let form = document.querySelector("form.dolatsara__city-modal-form");
   let searchCityInput = document.getElementById("search-city");
+  let cityInput = document.querySelectorAll("input.city-name");
+  let selectedCity = document.querySelector("span.dolatsara__selected-city");
+  let selected = [];
+
+  cityInput.forEach((item) => {
+    item.addEventListener("change", () => {
+      if (item.checked == true) {
+        selected.push(item.value);
+      } else {
+        selected = selected.filter((i) => i !== item.value);
+      }
+
+      if (selected.length) {
+        selectedCity.innerHTML = selected;
+      } else {
+        selectedCity.innerHTML = "حداقل یک شهر را انتخاب کنید.";
+      }
+    });
+  });
 
   confirmButton.addEventListener("click", () => {
     console.log("form submited");
