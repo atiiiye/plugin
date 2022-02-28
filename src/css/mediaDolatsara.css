@@ -33,8 +33,7 @@ body {
   background-color: #fff;
   font-size: 100%;
   direction: rtl;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body a:focus {
@@ -55,14 +54,10 @@ body .container-fluid {
     width: calc(100% - 2rem);
   }
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
   }
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent {
     padding: 1rem 2rem;
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
   }
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider {
@@ -94,8 +89,6 @@ body .container-fluid {
     padding: 0.375rem 0;
   }
   section.several-row-slider {
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
   }
   section.several-row-slider div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .image-placeholder {
@@ -113,35 +106,22 @@ body .container-fluid {
   }
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
-    -webkit-transform: scale(1.025);
-            transform: scale(1.025);
+    transform: scale(1.025);
   }
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
-    -webkit-transform: scale(1.18);
-            transform: scale(1.18);
+    transform: scale(1.18);
   }
   section.tab-navigation {
     display: none;
   }
   section.dropdown-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin: 2rem 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
     margin: 0;
   }
   section.dropdown-section .dropdown-section__parent {
@@ -150,18 +130,12 @@ body .container-fluid {
   }
   section.dropdown-section .dropdown-section__parent:hover > ul,
   section.dropdown-section .dropdown-section__parent:focus > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   section.dropdown-section .dropdown-section__parent:hover > div > svg,
   section.dropdown-section .dropdown-section__parent:focus > div > svg {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: -webkit-transform 0.35s ease-in-out;
-    transition: -webkit-transform 0.35s ease-in-out;
+    transform: rotate(180deg);
     transition: transform 0.35s ease-in-out;
-    transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
     color: rgba(0, 0, 0, 0.5);
   }
   section.dropdown-section .dropdown-section__parent:hover > div > button,
@@ -170,15 +144,9 @@ body .container-fluid {
     font-weight: 600;
   }
   section.dropdown-section .dropdown-section__button-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     color: #b8b8b8;
     background: #eeeeee;
@@ -196,20 +164,12 @@ body .container-fluid {
   }
   section.dropdown-section .dropdown-section__button-box svg {
     font-size: 24px;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transition: -webkit-transform 0.35s ease-in-out;
-    transition: -webkit-transform 0.35s ease-in-out;
+    transform: rotate(0deg);
     transition: transform 0.35s ease-in-out;
-    transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
   }
   section.dropdown-section ul.dropdown-section__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
-    -webkit-transition: display 0.3s ease-in;
     transition: display 0.3s ease-in;
     display: none;
   }
@@ -246,29 +206,23 @@ body .container-fluid {
 
 @media (max-width: 768px) {
   section.dolatsara-slider-section {
-    height: -webkit-max-content;
-    height: -moz-max-content;
     height: max-content;
   }
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide,
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next,
   section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-prev,
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-next {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   section.banner-content {
     display: none;
@@ -277,47 +231,25 @@ body .container-fluid {
     display: none;
   }
   section.best-categorie-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin: 2rem 0;
     margin: 0;
   }
   section.best-categorie-icon .icon-box-parent {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
     width: 90%;
     border-bottom: 1px solid #b8b8b8;
   }
   section.best-categorie-icon .icon-box-parent .icon-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin: 2rem 0;
     background-color: #4a1f61;

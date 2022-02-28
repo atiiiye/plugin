@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="./src/css/dolatsara.css" />
   <link rel="stylesheet" href="./src/css/common.css" />
   <link rel="stylesheet" href="./src/css/dolatsaraMenu.css" />
-  
+
   <!-- medias -->
   <link rel="stylesheet" href="./src/css/mediaDolatsara.css" />
   <link rel="stylesheet" href="./src/css/mediaCommon.css" />
@@ -43,7 +43,7 @@
           data-bs-target="#dolatsara__menu-list">
           <span class="menu navbar-toggler-icon ti-menu"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="dolatsara__menu-list">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 dolatsara__menu">
             <li class="nav-item dolatsara__menu-item">
@@ -55,7 +55,7 @@
             <li class="nav-item dolatsara__menu-item">
               <a class="nav-link" href="#">ثبت درخواست خرید</a>
             </li>
-  
+
             <li class="nav-item dolatsara__menu-item dropdown">
               <a class="nav-link" href="#" id="navbar-dropdown" role="button" data-bs-toggle="dropdown">
                 مجله دولتسرا
@@ -73,13 +73,13 @@
           </ul>
         </div>
       </nav>
-  
+
       <div class="dolatsara__left-menu">
         <button class="dolatsara__city-button" data-bs-toggle="modal" data-bs-target="#city-modal">
           3شهر
           <i class="material-icons">location_on</i>
         </button>
-  
+
         <div class="modal fade dolatsara__city-modal" id="city-modal">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -90,7 +90,8 @@
               <form class="dolatsara__city-modal-form">
                 <div class="modal-body">
                   <i class="fa fa-search search-icon"></i>
-                  <input type="text" class="dolatsara__search-city" placeholder="جستجو در شهرها"  id="search-city">
+                  <input type="text" class="dolatsara__search-city" placeholder="جستجو در شهرها" id="search-city"
+                    oninput="searchCity()">
 
                   <ul class="dolatsara__city-list" id="dolatsara__city-list">
                     <li class="dolatsara__city-list-item">
@@ -139,14 +140,14 @@
             </div>
           </div>
         </div>
-  
+
         <a href="tel:02122254171" class="dolatsara__phone">
           <strong>22254171</strong>
           <small>-021</small>
         </a>
         <div class="dropdown dolatsara__setting-list">
           <button type="button" class="dolatsara__setting-button" data-bs-toggle="dropdown">
-            <img src="./src/images/Layer 1.png" alt="dolatsara__setting"/>
+            <img src="./src/images/Layer 1.png" alt="dolatsara__setting" />
           </button>
           <ul class="dropdown-menu dolatsara__setting-list-icons">
             <div class="row">
@@ -198,7 +199,7 @@
                   آیکون 4
                 </a>
               </li>
-  
+
             </div>
           </ul>
         </div>
@@ -1313,8 +1314,35 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 
-    <!--select2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <!--select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+
+    let form = document.querySelector("form.dolatsara__city-modal-form");
+    let searchCityInput = document.getElementById("search-city");
+    let cityInput = document.querySelectorAll("input.city-name");
+
+    function searchCity() {
+      let txtValue;
+      let ul = document.getElementById("dolatsara__city-list");
+      let li = ul.getElementsByTagName("li");
+      let filter = searchCityInput.value;
+
+      for (let i = 0; i < li.length; i++) {
+        let label = li[i].getElementsByTagName("label")[0];
+        console.log('label', label)
+
+        txtValue = label.textContent || label.innerText;
+
+        if (txtValue.indexOf(filter) > -1) {
+          li[i].style.display = "block";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>

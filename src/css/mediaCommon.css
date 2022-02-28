@@ -6,8 +6,7 @@
 
 @media (max-width: 768px) {
   section.several-advertising-section {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    grid-template-columns: 100%;
     grid-gap: 0;
   }
   section.space-section h3.space-section-title {
