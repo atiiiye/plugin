@@ -194,28 +194,28 @@ $(document).ready(function () {
     return form.submit();
   });
 
-  // searchCityInput.addEventListener("input", () => {
-  //   console.log('first')
-  //   searchCity();
-  // });
+  searchCityInput.addEventListener("input", () => {
+    console.log('first')
+    searchCity();
+  });
 
-  // function searchCity() {
-  //   let txtValue;
-  //   let ul = document.getElementById("dolatsara__city-list");
-  //   let li = ul.getElementsByTagName("li");
-  //   let filter = searchCityInput.value;
+  function searchCity() {
+    let txtValue;
+    let ul = document.getElementById("dolatsara__city-list");
+    let li = ul.getElementsByTagName("li");
+    let filter = searchCityInput.value;
 
-  //   for (let i = 0; i < li.length; i++) {
-  //     let label = li[i].getElementsByTagName("label")[0];
-  //     console.log('label', label)
+    for (let i = 0; i < li.length; i++) {
+      let label = li[i].getElementsByTagName("label")[0];
+      console.log('label', label)
 
-  //     txtValue = label.textContent || label.innerText;
+      txtValue = label.textContent || label.innerText;
 
-  //     if (txtValue.indexOf(filter) > -1) {
-  //       li[i].style.display = "block";
-  //     } else {
-  //       li[i].style.display = "none";
-  //     }
-  //   }
-  // }
+      if (txtValue.indexOf(filter) > -1) {
+        li[i].style.display = "block";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
 });

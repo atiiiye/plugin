@@ -48,7 +48,8 @@ body .container-fluid {
 header.dolatsara__menu {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border-top: 1px solid #4a1f61;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 100;
   width: 100%;
 }
@@ -139,6 +140,10 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu button.d
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu button.dolatsara__city-button i {
   font-size: 14px;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal {
+  z-index: 10000;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header {
@@ -314,5 +319,9 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   max-height: 50px;
   font-size: 32px;
   color: #4a1f61;
+}
+
+.modal-backdrop.fade.show {
+  z-index: 0;
 }
 /*# sourceMappingURL=dolatsaraMenu.css.map */
