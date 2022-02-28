@@ -322,6 +322,6 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 }
 
 .modal-backdrop.fade.show {
-  z-index: 0;
+  z-index: 90;
 }
 /*# sourceMappingURL=dolatsaraMenu.css.map */
