@@ -38,6 +38,10 @@ header.dolatsara__menu {
       div#dolatsara__menu-list {
         ul.dolatsara__menu {
           li.dolatsara__menu-item {
+            &:hover {
+              border-bottom: 2px solid rgba($color: $color-purple, $alpha: 1);
+            }
+
             a {
               color: rgba($color: $color-purple, $alpha: 1);
               font-weight: 600;

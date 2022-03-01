@@ -1,7 +1,39 @@
+@media(max-width : 991px) {
+  header.dolatsara__menu {
+    div.dolatsara__all-menu {
+      nav.dolatsara__right-menu {
+
+        div#dolatsara__menu-list {
+          ul.dolatsara__menu {
+            li.dolatsara__menu-item {
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   header.dolatsara__menu {
     div.dolatsara__all-menu {
       padding: 0.5rem;
+
+      nav.dolatsara__right-menu {
+
+        div#dolatsara__menu-list {
+          ul.dolatsara__menu {
+            li.dolatsara__menu-item {
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
 
       div.dolatsara__left-menu {
         a.dolatsara__phone {

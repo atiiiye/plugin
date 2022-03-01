@@ -83,6 +83,10 @@ header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu button.
   padding-bottom: 0.2rem;
 }
 
+header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list ul.dolatsara__menu li.dolatsara__menu-item:hover {
+  border-bottom: 2px solid #4a1f61;
+}
+
 header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list ul.dolatsara__menu li.dolatsara__menu-item a {
   color: #4a1f61;
   font-weight: 600;
