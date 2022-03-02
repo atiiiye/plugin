@@ -1,9 +1,13 @@
-@media(max-width : 991px) {
+@media (max-width: 991px) {
   header.dolatsara__menu {
     div.dolatsara__all-menu {
       nav.dolatsara__right-menu {
-
         div#dolatsara__menu-list {
+          a.logo-img-link {
+            img.logo-img {
+              margin: 1rem 0;
+            }
+          }
           ul.dolatsara__menu {
             li.dolatsara__menu-item {
               &:hover {
@@ -23,7 +27,6 @@
       padding: 0.5rem;
 
       nav.dolatsara__right-menu {
-
         div#dolatsara__menu-list {
           ul.dolatsara__menu {
             li.dolatsara__menu-item {

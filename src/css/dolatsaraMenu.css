@@ -95,7 +95,7 @@ header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu button.
   padding-bottom: 0.2rem;
 }
 
-header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list img.logo-img {
+header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list a.logo-img-link img.logo-img {
   width: 100px;
   margin-left: .5rem;
 }
