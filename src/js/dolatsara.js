@@ -139,28 +139,28 @@ $(document).ready(function () {
 
   //**** navigation ****//
 
-  const tabButton = document.querySelectorAll(".tab-navigation__tab-btn");
-  const tabContent = document.querySelectorAll(".tab-navigation__content");
+  // const tabButton = document.querySelectorAll(".tab-navigation__tab-btn");
+  // const tabContent = document.querySelectorAll(".tab-navigation__content");
 
-  tabContent[1].style.display = "block";
+  // tabContent[1].style.display = "block";
 
-  tabButton.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      for (let i = 0; i < tabButton.length; i++)
-        tabButton[i].classList.remove("selected");
-      Navigation(item, index);
-    });
-  });
+  // tabButton.forEach((item, index) => {
+  //   item.addEventListener("click", () => {
+  //     for (let i = 0; i < tabButton.length; i++)
+  //       tabButton[i].classList.remove("selected");
+  //     Navigation(item, index);
+  //   });
+  // });
 
-  const Navigation = (item, index) => {
-    const contentTab = tabContent[index].getAttribute("id");
-    item.classList.add("selected");
+  // const Navigation = (item, index) => {
+  //   const contentTab = tabContent[index].getAttribute("id");
+  //   item.classList.add("selected");
 
-    for (let i = 0; i < tabContent.length; i++)
-      tabContent[i].style.display = "none";
+  //   for (let i = 0; i < tabContent.length; i++)
+  //     tabContent[i].style.display = "none";
 
-    document.getElementById(contentTab).style.display = "block";
-  };
+  //   document.getElementById(contentTab).style.display = "block";
+  // };
 
   //****search city ****//
 
@@ -202,7 +202,7 @@ $(document).ready(function () {
   function searchCity() {
     let txtValue;
     let ul = document.getElementById("dolatsara__city-list");
-    let li = ul.getElementsByTagName("li");
+    let li = document.querySelectorAll("li.dolatsara__city-list-item");
     let filter = searchCityInput.value;
 
     for (let i = 0; i < li.length; i++) {
