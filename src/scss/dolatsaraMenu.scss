@@ -36,6 +36,15 @@ header.dolatsara__menu {
       }
 
       div#dolatsara__menu-list {
+
+        a.logo-img-link{
+
+          img.logo-img {
+            width: 100px;
+            margin-left: .5rem;
+          }
+        }
+
         ul.dolatsara__menu {
           li.dolatsara__menu-item {
             &:hover {

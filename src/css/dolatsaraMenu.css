@@ -95,6 +95,11 @@ header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu button.
   padding-bottom: 0.2rem;
 }
 
+header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list img.logo-img {
+  width: 100px;
+  margin-left: .5rem;
+}
+
 header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list ul.dolatsara__menu li.dolatsara__menu-item:hover {
   border-bottom: 1px solid #4a1f61;
 }
