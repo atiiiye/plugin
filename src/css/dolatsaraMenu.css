@@ -204,12 +204,12 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   border: 1px solid rgba(151, 151, 151, 0.5);
 }
 
-header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body svg {
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body svg, header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body i {
   padding: 0 0.375rem 0 0;
   position: absolute;
   right: 1rem;
   top: 1.5rem;
-  font-size: 28px;
+  font-size: 20px;
   color: rgba(184, 184, 184, 0.5);
 }
 
