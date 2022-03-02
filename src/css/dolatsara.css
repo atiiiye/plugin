@@ -155,8 +155,8 @@ section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-
   padding: 0;
 }
 
-section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__search-button svg.search-icon,
-section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__search-button i.search-icon {
+section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__search-button svg,
+section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__search-button i {
   color: #b8b8b8;
 }
 
