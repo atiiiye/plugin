@@ -13,7 +13,7 @@ header.dolatsara__menu {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1.35rem 2rem;
     background: rgba($color: $color-gray-5, $alpha: 10);
 
     nav.dolatsara__right-menu {
@@ -39,15 +39,14 @@ header.dolatsara__menu {
         ul.dolatsara__menu {
           li.dolatsara__menu-item {
             &:hover {
-              border-bottom: 2px solid rgba($color: $color-purple, $alpha: 1);
+              border-bottom: 1px solid rgba($color: $color-purple, $alpha: 1);
             }
 
             a {
-              color: rgba($color: $color-purple, $alpha: 1);
-              font-weight: 600;
+              color: rgba($color: $color-dark, $alpha: 1);
               font-size: 13px;
-              padding-left: 1rem;
-              padding-right: 1rem;
+              // padding-left: 1rem;
+              // padding-right: 1rem;
             }
 
             svg {
@@ -264,6 +263,12 @@ header.dolatsara__menu {
                 justify-content: space-evenly;
                 font-size: 14px;
                 padding: 0;
+                direction: rtl;
+                max-width: 80px;
+                width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
 
                 &:focus {
                   outline: 0;

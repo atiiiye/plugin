@@ -1,6 +1,8 @@
 @media (max-width: 768px) {
   section.shipping-time {
     padding: 2rem 1rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
   }
   section.shipping-time div.owl-nav button.owl-prev,
@@ -12,6 +14,8 @@
     right: 30px;
   }
   section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     margin: 0 0.5rem;
   }
@@ -24,7 +28,12 @@
     font-size: 13px;
   }
   section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
   }
   section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item {
@@ -32,8 +41,13 @@
     margin-bottom: .5rem;
   }
   section.shipping-time div.owl-carousel.owl-theme div.owl-stage-outer div.owl-stage div.owl-item div.slide-item.item ul.shipping-time__hour-list li.shipping-time__hour-list-item label.shipping-time-hour-list-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem 0.5rem;
     border-radius: 8px;
   }
