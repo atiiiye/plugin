@@ -171,31 +171,41 @@ $(document).ready(function () {
   let searchCityInput = document.getElementById("search-city");
   let cityInput = document.querySelectorAll("input.city-name");
   let selectedCity = document.querySelector("span.dolatsara__selected-city");
-  let selected = [];
+  let cityNameParent = document.querySelector(
+    "div.dolatsara__city-name-parent"
+  );
+  let cityName = document.querySelectorAll("p.dolatsara__city-name");
+  let city = [];
 
   cityInput.forEach((item) => {
     item.addEventListener("change", () => {
       if (item.checked == true) {
-        selected.push(item.value);
+        city.push(item.value);
+        let newCity = document.createElement("p");
+        newCity.setAttribute("class", "dolatsara__city-name");
+        newCity.innerHTML = item.value;
+        cityNameParent.appendChild(newCity);
       } else {
-        selected = selected.filter((i) => i !== item.value);
+        city = city.filter((i) => i !== item.value);
+        let cityName = document.querySelectorAll("p.dolatsara__city-name");
+        cityName.forEach((i) => {
+          if (i.innerHTML == item.id) cityNameParent.removeChild(i);
+        });
       }
 
-      if (selected.length) {
-        selectedCity.innerHTML = selected;
+      if (cityName.length) {
+        selectedCity.style.display = "none";
       } else {
-        selectedCity.innerHTML = "حداقل یک شهر را انتخاب کنید.";
+        selectedCity.style.display = "block";
       }
     });
   });
 
   confirmButton.addEventListener("click", () => {
-    console.log("form submited");
     return form.submit();
   });
 
   searchCityInput.addEventListener("input", () => {
-    console.log('first')
     searchCity();
   });
 
@@ -207,8 +217,6 @@ $(document).ready(function () {
 
     for (let i = 0; i < li.length; i++) {
       let label = li[i].getElementsByTagName("label")[0];
-      console.log('label', label)
-
       txtValue = label.textContent || label.innerText;
 
       if (txtValue.indexOf(filter) > -1) {

@@ -187,9 +187,35 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   margin-bottom: 1rem;
 }
 
-header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header span {
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header span.dolatsara__selected-city {
   color: rgba(151, 151, 151, 0.75);
   font-size: 14px;
+  margin-bottom: .5rem;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent p.dolatsara__city-name {
+  border: 1px solid #4a1f61;
+  background-color: rgba(74, 31, 97, 0.35);
+  color: white;
+  padding: .375rem;
+  border-radius: 28px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: .2rem;
+  margin-right: .2rem;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body {
