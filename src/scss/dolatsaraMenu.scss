@@ -137,18 +137,37 @@ header.dolatsara__menu {
           display: flex;
           flex-wrap: wrap;
 
-          p.dolatsara__city-name {
-            border: 1px solid rgba($color: $color-purple, $alpha: 1.0);
-            background-color: rgba($color: $color-purple, $alpha: .35);
-            color: rgba($color: $color-light, $alpha: 1);
-            padding: .375rem;
-            border-radius: 28px;
-            width: max-content;
+          .dolatsara__selected-city {
             display: flex;
+            align-items: center;
+            background-color: rgba($color: $color-purple, $alpha: .35);
+            border: 1px solid rgba($color: $color-purple, $alpha: 1.0);
+            border-radius: 28px;
             font-size: 14px;
-            margin-bottom: .2rem;
             margin-right: .2rem;
+            margin-bottom: .2rem;
+
+            p.dolatsara__city-name {
+              color: rgba($color: $color-light, $alpha: 1);
+              padding: .375rem;
+              width: max-content;
+            }
+  
+            i.material-icons.delete-city {
+              cursor: pointer;
+              color: rgba($color: $color-purple, $alpha: 1.0);
+            font-size: 14px;
+            user-select: none;
+              border-radius: 50%;
+              padding: .2rem;
+              margin:auto .2rem;
+  
+              &:hover {
+                background-color: rgba($color: $color-purple, $alpha: 0.45);
+              }
+            }
           }
+
         }
 
         form.dolatsara__city-modal-form {

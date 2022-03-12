@@ -175,30 +175,96 @@ $(document).ready(function () {
     "div.dolatsara__city-name-parent"
   );
   let cityName = document.querySelectorAll("p.dolatsara__city-name");
+  let i = document.querySelectorAll("i.material-icons.delete-city");
+  let selectAllInput = document.querySelector("input.select-all");
   let city = [];
 
   cityInput.forEach((item) => {
-    item.addEventListener("change", () => {
+    item.addEventListener("change", (e) => {
       if (item.checked == true) {
-        city.push(item.value);
-        let newCity = document.createElement("p");
-        newCity.setAttribute("class", "dolatsara__city-name");
-        newCity.innerHTML = item.value;
-        cityNameParent.appendChild(newCity);
+        city.push(item.id);
+
+        let div = document.createElement("div");
+        let p = document.createElement("p");
+        let i = document.createElement("i");
+
+        div.setAttribute("class", "dolatsara__selected-city");
+        p.setAttribute("class", "dolatsara__city-name");
+        i.setAttribute("class", "material-icons delete-city");
+
+        p.innerHTML = item.id;
+        i.innerHTML = "close";
+
+        div.appendChild(p);
+        div.appendChild(i);
+        cityNameParent.appendChild(div);
       } else {
-        city = city.filter((i) => i !== item.value);
-        let cityName = document.querySelectorAll("p.dolatsara__city-name");
-        cityName.forEach((i) => {
-          if (i.innerHTML == item.id) cityNameParent.removeChild(i);
+        // console.log('ff', item.id)
+        city = city.filter((i) => i !== item.id);
+        let cityItem = document.querySelectorAll(
+          "div.dolatsara__selected-city"
+        );
+        cityItem.forEach((i) => {
+          if (i.children[0].innerHTML === item.id)
+            cityNameParent.removeChild(i);
         });
       }
+      let cityItem = document.querySelectorAll("div.dolatsara__selected-city");
 
-      if (cityName.length) {
+      if (cityItem.length) {
         selectedCity.style.display = "none";
       } else {
         selectedCity.style.display = "block";
       }
     });
+
+    // cityItem.forEach((item) => {
+    //   item.children[1].addEventListener("click", (e) => {
+    //     console.log(item.parentElement.nodeName);
+    //     console.log(item);
+
+    //     city = city.filter((i) => i !== item.value);
+    //     cityName.forEach((i) => {
+    //       if (i.innerHTML == item.id) cityNameParent.removeChild(i);
+    //     });
+    //   });
+    // });
+  });
+
+  selectAllInput.addEventListener("change", (val) => {
+    if (val.target.checked == true) {
+      cityInput.forEach((item) => {
+        item.checked = true;
+        city.push(item.id);
+
+        let div = document.createElement("div");
+        let p = document.createElement("p");
+        let i = document.createElement("i");
+
+        div.setAttribute("class", "dolatsara__selected-city");
+        p.setAttribute("class", "dolatsara__city-name");
+        i.setAttribute("class", "material-icons delete-city");
+
+        p.innerHTML = item.id;
+        i.innerHTML = "close";
+
+        div.appendChild(p);
+        div.appendChild(i);
+        cityNameParent.appendChild(div);
+      });
+    } else {
+      cityInput.forEach((item) => {
+        item.checked = false;
+        city = city.filter((i) => i !== item.id);
+        let cityItem = document.querySelectorAll(
+          "div.dolatsara__selected-city"
+        );
+        cityItem.forEach((i) => {
+          if (i.children[0].innerHTML === item.id)
+            cityNameParent.removeChild(i);
+        });
+      });
+    }
   });
 
   confirmButton.addEventListener("click", () => {

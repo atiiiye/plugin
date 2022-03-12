@@ -202,21 +202,44 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
       flex-wrap: wrap;
 }
 
-header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent p.dolatsara__city-name {
-  border: 1px solid #4a1f61;
-  background-color: rgba(74, 31, 97, 0.35);
-  color: white;
-  padding: .375rem;
-  border-radius: 28px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent .dolatsara__selected-city {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(74, 31, 97, 0.35);
+  border: 1px solid #4a1f61;
+  border-radius: 28px;
   font-size: 14px;
-  margin-bottom: .2rem;
   margin-right: .2rem;
+  margin-bottom: .2rem;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent .dolatsara__selected-city p.dolatsara__city-name {
+  color: white;
+  padding: .375rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent .dolatsara__selected-city i.material-icons.delete-city {
+  cursor: pointer;
+  color: #4a1f61;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 50%;
+  padding: .2rem;
+  margin: auto .2rem;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent .dolatsara__selected-city i.material-icons.delete-city:hover {
+  background-color: rgba(74, 31, 97, 0.45);
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body {

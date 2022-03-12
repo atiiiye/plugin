@@ -26,7 +26,6 @@
 
     <!-- Link fontawesome CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="./src/css/all.min.css" rel="stylesheet" /> -->
 </head>
@@ -116,7 +115,11 @@
                   <h5 class="modal-title">انتخاب شهر</h5>
                   <span class="dolatsara__selected-city">حداقل یک شهر را انتخاب کنید.</span>
                   <div class="dolatsara__city-name-parent">
-
+<!-- 
+                    <div class="dolatsara__selected-city">
+                      <p class="dolatsara__city-name">تهران</p>
+                      <i class="material-icons delete-city">close</i>
+                    </div> -->
                   </div>
                 </div>
                 <form class="dolatsara__city-modal-form">
@@ -132,7 +135,18 @@
 
                     <ul class="dolatsara__city-list" id="dolatsara__city-list">
                       <li class="dolatsara__city-list-item">
-                        <label for="تهران" class="">
+                        <label for="select-all" class="dolatsara__city-list-label">
+                          انتخاب همه
+                          <input
+                            type="checkbox"
+                            name="select-all"
+                            id="select-all"
+                            class="select-all"
+                            value="انتخاب همه"
+                          />
+                        </label>
+                      <li class="dolatsara__city-list-item">
+                        <label for="تهران" class="dolatsara__city-list-label">
                           تهران
                           <input
                             type="checkbox"
@@ -144,7 +158,7 @@
                         </label>
                       </li>
                       <li class="dolatsara__city-list-item">
-                        <label for="اراک" class="">
+                        <label for="اراک" class="dolatsara__city-list-label">
                           اراک
                           <input
                             type="checkbox"
@@ -156,7 +170,7 @@
                         </label>
                       </li>
                       <li class="dolatsara__city-list-item">
-                        <label for="شیراز" class="">
+                        <label for="شیراز" class="dolatsara__city-list-label">
                           شیراز
                           <input
                             type="checkbox"
@@ -168,7 +182,7 @@
                         </label>
                       </li>
                       <li class="dolatsara__city-list-item">
-                        <label for="ساری" class="">
+                        <label for="ساری" class="dolatsara__city-list-label">
                           ساری
                           <input
                             type="checkbox"
@@ -180,7 +194,7 @@
                         </label>
                       </li>
                       <li class="dolatsara__city-list-item">
-                        <label for="مشهد" class="">
+                        <label for="مشهد" class="dolatsara__city-list-label">
                           مشهد
                           <input
                             type="checkbox"
@@ -192,7 +206,7 @@
                         </label>
                       </li>
                       <li class="dolatsara__city-list-item">
-                        <label for="یزد" class="">
+                        <label for="یزد" class="dolatsara__city-list-label">
                           یزد
                           <input
                             type="checkbox"
