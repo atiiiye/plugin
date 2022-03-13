@@ -138,7 +138,6 @@ $(document).ready(function () {
   });
 
   //**** navigation ****//
-
   // const tabButton = document.querySelectorAll(".tab-navigation__tab-btn");
   // const tabContent = document.querySelectorAll(".tab-navigation__content");
 
@@ -158,25 +157,19 @@ $(document).ready(function () {
 
   //   for (let i = 0; i < tabContent.length; i++)
   //     tabContent[i].style.display = "none";
-
   //   document.getElementById(contentTab).style.display = "block";
   // };
 
   //****search city ****//
-
-  let confirmButton = document.querySelector(
-    "button.dolatsara__confirm-button"
-  );
+  let confirmButton = document.querySelector(".dolatsara__confirm-button");
   let form = document.querySelector("form.dolatsara__city-modal-form");
   let searchCityInput = document.getElementById("search-city");
   let cityInput = document.querySelectorAll("input.city-name");
   let selectedCity = document.querySelector("span.dolatsara__selected-city");
-  let cityNameParent = document.querySelector(
-    "div.dolatsara__city-name-parent"
-  );
-  let i = document.querySelectorAll("i.material-icons.delete-city");
+  let cityNameParent = document.querySelector(".dolatsara__city-name-parent");
   let selectAllInput = document.querySelector("input.select-all");
   let city = [];
+  let icon = document.querySelectorAll(".delete-city");
 
   cityInput.forEach((item) => {
     item.addEventListener("change", (e) => {
@@ -199,9 +192,7 @@ $(document).ready(function () {
         cityNameParent.appendChild(div);
       } else {
         city = city.filter((i) => i !== item.id);
-        let cityItem = document.querySelectorAll(
-          "div.dolatsara__selected-city"
-        );
+        let cityItem = document.querySelectorAll("div.dolatsara__selected-city");
         cityItem.forEach((i) => {
           if (i.children[0].innerHTML === item.id)
             cityNameParent.removeChild(i);
@@ -212,6 +203,13 @@ $(document).ready(function () {
       else selectAllInput.checked = false;
 
       if (city.length) {
+        icon = document.querySelectorAll(".delete-city");
+        console.log("icon", icon);
+        icon.forEach((item) => {
+          item.addEventListener("click", () => {
+            cityNameParent.removeChild(item.parentElement)
+          });
+        });
         selectedCity.style.display = "none";
       } else {
         selectedCity.style.display = "block";
@@ -257,6 +255,14 @@ $(document).ready(function () {
 
     if (city.length) {
       selectedCity.style.display = "none";
+      icon = document.querySelectorAll(".delete-city");
+      // console.log("icon", icon);
+      icon.forEach((item) => {
+        item.addEventListener("click", () => {
+          console.log(item.parentElement);
+          cityNameParent.removeChild(item.parentElement)
+        });
+      });
     } else {
       selectedCity.style.display = "block";
     }
