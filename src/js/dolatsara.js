@@ -174,7 +174,6 @@ $(document).ready(function () {
   let cityNameParent = document.querySelector(
     "div.dolatsara__city-name-parent"
   );
-  let cityName = document.querySelectorAll("p.dolatsara__city-name");
   let i = document.querySelectorAll("i.material-icons.delete-city");
   let selectAllInput = document.querySelector("input.select-all");
   let city = [];
@@ -199,7 +198,6 @@ $(document).ready(function () {
         div.appendChild(i);
         cityNameParent.appendChild(div);
       } else {
-        // console.log('ff', item.id)
         city = city.filter((i) => i !== item.id);
         let cityItem = document.querySelectorAll(
           "div.dolatsara__selected-city"
@@ -209,48 +207,39 @@ $(document).ready(function () {
             cityNameParent.removeChild(i);
         });
       }
-      let cityItem = document.querySelectorAll("div.dolatsara__selected-city");
 
-      if (cityItem.length) {
+      if (city.length == cityInput.length) selectAllInput.checked = true;
+      else selectAllInput.checked = false;
+
+      if (city.length) {
         selectedCity.style.display = "none";
       } else {
         selectedCity.style.display = "block";
       }
     });
-
-    // cityItem.forEach((item) => {
-    //   item.children[1].addEventListener("click", (e) => {
-    //     console.log(item.parentElement.nodeName);
-    //     console.log(item);
-
-    //     city = city.filter((i) => i !== item.value);
-    //     cityName.forEach((i) => {
-    //       if (i.innerHTML == item.id) cityNameParent.removeChild(i);
-    //     });
-    //   });
-    // });
   });
 
   selectAllInput.addEventListener("change", (val) => {
     if (val.target.checked == true) {
       cityInput.forEach((item) => {
-        item.checked = true;
-        city.push(item.id);
+        if (!item.checked) {
+          item.checked = true;
+          city.push(item.id);
+          let div = document.createElement("div");
+          let p = document.createElement("p");
+          let i = document.createElement("i");
 
-        let div = document.createElement("div");
-        let p = document.createElement("p");
-        let i = document.createElement("i");
+          div.setAttribute("class", "dolatsara__selected-city");
+          p.setAttribute("class", "dolatsara__city-name");
+          i.setAttribute("class", "material-icons delete-city");
 
-        div.setAttribute("class", "dolatsara__selected-city");
-        p.setAttribute("class", "dolatsara__city-name");
-        i.setAttribute("class", "material-icons delete-city");
+          p.innerHTML = item.id;
+          i.innerHTML = "close";
 
-        p.innerHTML = item.id;
-        i.innerHTML = "close";
-
-        div.appendChild(p);
-        div.appendChild(i);
-        cityNameParent.appendChild(div);
+          div.appendChild(p);
+          div.appendChild(i);
+          cityNameParent.appendChild(div);
+        }
       });
     } else {
       cityInput.forEach((item) => {
@@ -264,6 +253,12 @@ $(document).ready(function () {
             cityNameParent.removeChild(i);
         });
       });
+    }
+
+    if (city.length) {
+      selectedCity.style.display = "none";
+    } else {
+      selectedCity.style.display = "block";
     }
   });
 
