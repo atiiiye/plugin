@@ -274,8 +274,7 @@ $(document).ready(function () {
     selectAllInput.checked = false;
     cityInput.forEach((item) => (item.checked = false));
     cityNameParent.innerHTML = "";
-    deleteButton.style.display = "none";
-    selectedCity.style.display = "block";
+    removeCity()
   });
 
   confirmButton.addEventListener("click", () => {
