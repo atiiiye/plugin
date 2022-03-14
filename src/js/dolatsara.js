@@ -194,9 +194,7 @@ $(document).ready(function () {
         cityNameParent.appendChild(div);
       } else {
         city = city.filter((i) => i !== item.id);
-        let cityItem = document.querySelectorAll(
-          "div.dolatsara__selected-city"
-        );
+        let cityItem = document.querySelectorAll("div.dolatsara__selected-city");
         cityItem.forEach((i) => {
           if (i.children[0].innerHTML === item.id)
             cityNameParent.removeChild(i);
@@ -205,28 +203,7 @@ $(document).ready(function () {
 
       if (city.length == cityInput.length) selectAllInput.checked = true;
       else selectAllInput.checked = false;
-
-      if (city.length) {
-        icon = document.querySelectorAll(".delete-city");
-        icon.forEach((item) => {
-          item.addEventListener("click", () => {
-            const test = item.previousSibling.innerHTML;
-            cityNameParent.removeChild(item.parentElement);
-            console.log("previousSibling", test);
-            cityInput.forEach((item) => {
-              if (item.id === cityName) {
-                item.checked = false;
-                selectAllInput.checked = false;
-              }
-            });
-          });
-        });
-        selectedCity.style.display = "none";
-        deleteButton.style.display = "block";
-      } else {
-        selectedCity.style.display = "block";
-        deleteButton.style.display = "none";
-      }
+      removeCity()
     });
   });
 
@@ -265,6 +242,10 @@ $(document).ready(function () {
         });
       });
     }
+    removeCity()
+  });
+
+  const removeCity = () =>{
 
     if (city.length) {
       icon = document.querySelectorAll(".delete-city");
@@ -272,8 +253,6 @@ $(document).ready(function () {
         item.addEventListener("click", () => {
           const cityName = item.previousSibling.innerHTML;
           cityNameParent.removeChild(item.parentElement);
-          console.log("previousSibling", cityName);
-
           cityInput.forEach((item) => {
             if (item.id === cityName) {
               item.checked = false;
@@ -288,7 +267,7 @@ $(document).ready(function () {
       selectedCity.style.display = "block";
       deleteButton.style.display = "none";
     }
-  });
+  }
 
   deleteButton.addEventListener("click", () => {
     city = [];
