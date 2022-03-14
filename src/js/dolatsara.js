@@ -208,10 +208,17 @@ $(document).ready(function () {
 
       if (city.length) {
         icon = document.querySelectorAll(".delete-city");
-        console.log("icon", icon);
         icon.forEach((item) => {
           item.addEventListener("click", () => {
+            const test = item.previousSibling.innerHTML;
             cityNameParent.removeChild(item.parentElement);
+            console.log("previousSibling", test);
+            cityInput.forEach((item) => {
+              if (item.id === cityName) {
+                item.checked = false;
+                selectAllInput.checked = false;
+              }
+            });
           });
         });
         selectedCity.style.display = "none";
@@ -260,16 +267,23 @@ $(document).ready(function () {
     }
 
     if (city.length) {
-      selectedCity.style.display = "none";
-      deleteButton.style.display = "block";
       icon = document.querySelectorAll(".delete-city");
-      // console.log("icon", icon);
       icon.forEach((item) => {
         item.addEventListener("click", () => {
-          console.log(item.parentElement);
+          const cityName = item.previousSibling.innerHTML;
           cityNameParent.removeChild(item.parentElement);
+          console.log("previousSibling", cityName);
+
+          cityInput.forEach((item) => {
+            if (item.id === cityName) {
+              item.checked = false;
+              selectAllInput.checked = false;
+            }
+          });
         });
       });
+      selectedCity.style.display = "none";
+      deleteButton.style.display = "block";
     } else {
       selectedCity.style.display = "block";
       deleteButton.style.display = "none";
@@ -279,8 +293,9 @@ $(document).ready(function () {
   deleteButton.addEventListener("click", () => {
     city = [];
     selectAllInput.checked = false;
-    cityInput.forEach((item) => item.checked = false);
-    cityNameParent.innerHTML = ""
+    cityInput.forEach((item) => (item.checked = false));
+    cityNameParent.innerHTML = "";
+    deleteButton.style.display = "none";
   });
 
   confirmButton.addEventListener("click", () => {
