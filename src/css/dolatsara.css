@@ -94,7 +94,7 @@ section.dolatsara__main-header div.dolatsara__main-content div.dolatsar__seacrh-
 }
 
 section.dolatsara__main-header div.dolatsara__main-content div.dolatsar__seacrh-tabs a.dolatsara__tabs-link {
-  color: #4a1f61;
+  color: #471d58;
   text-decoration: none;
   border-top-right-radius: 8px;
   font-size: 14px;
@@ -118,7 +118,7 @@ section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-
 
 section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form input.dolatsara__search-input {
   font-size: 14px;
-  color: #4a1f61;
+  color: #471d58;
   border: 1px solid #b8b8b8;
   background: #eeeeee;
   padding: 0.65rem 1rem 0.65rem 2rem;
@@ -165,7 +165,7 @@ section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-
 
 section.dolatsara__main-header div.dolatsara__main-content div.dolatsara__forms-box form button.dolatsara__instant-ads-button {
   font-size: 14px;
-  color: #4a1f61;
+  color: #471d58;
   border: 1px solid #b8b8b8;
   background: rgba(151, 151, 151, 0.75);
   padding: 0.65rem;
@@ -187,7 +187,7 @@ section.dolatsara__main-header div.dolatsara__main-content div.image-placeholder
 }
 
 section.dolatsara__main-header div.dolatsara__main-content h2.dolatsara__title-placeholder-title {
-  color: #4a1f61;
+  color: #471d58;
   margin-bottom: 2rem;
 }
 
@@ -214,7 +214,7 @@ section.dolatsara__main-header div.dolatsara__box-icons a.dolatsara__icon-placeh
   width: 45px;
   height: 45px;
   text-decoration: none;
-  color: #4a1f61;
+  color: #471d58;
   margin: 0.5rem 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,7 +228,7 @@ section.dolatsara__main-header div.dolatsara__box-icons a.dolatsara__icon-placeh
 }
 
 section.dolatsara__main-header div.dolatsara__box-icons a.dolatsara__icon-placehlder:active {
-  color: #4a1f61;
+  color: #471d58;
 }
 
 section.dolatsara__main-header div.dolatsara__box-icons a.dolatsara__icon-placehlder i,
@@ -283,8 +283,8 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
           box-shadow: inset 0 0 4px #b8b8b8;
   border-radius: 12px;
   background-color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 31, 97, 0.15)), color-stop(10%, transparent));
-  background-image: linear-gradient(rgba(74, 31, 97, 0.15), transparent 10%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(71, 29, 88, 0.15)), color-stop(10%, transparent));
+  background-image: linear-gradient(rgba(71, 29, 88, 0.15), transparent 10%);
   -webkit-transition: all 0.3ms ease-in;
   transition: all 0.3ms ease-in;
   -webkit-transform: scale(0.75);
@@ -331,7 +331,7 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-body-slider h4.item-slide__title {
-  color: #4a1f61;
+  color: #471d58;
   font-weight: 700;
   padding: 1rem 0;
   max-width: 100%;
@@ -362,7 +362,7 @@ section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrap
 }
 
 section.dolatsara-slider-section div.dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent div.card-footer-slider div.footer-column .score-icon {
-  color: #4a1f61;
+  color: #471d58;
   width: 16px;
   height: 16px;
 }
@@ -833,7 +833,7 @@ section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-
 }
 
 section.album-slider .dolatsara-slider div.swiper div.swiper-wrapper div.swiper-slide .slide-item-parent .card-body-slider .card-body-child h3 {
-  color: #4a1f61;
+  color: #471d58;
   font-size: 1.15rem;
   max-width: 50%;
   white-space: nowrap;
@@ -957,7 +957,7 @@ section.tab-navigation .tab-navigation__tabs .tab-navigation__tab-link .tab-navi
   position: absolute;
   top: 0;
   left: 0;
-  background: #4a1f61;
+  background: #471d58;
   height: 4px;
   width: 100%;
 }
@@ -1055,7 +1055,7 @@ section.banner-content .grid-boxes-section .single-box:nth-child(2n-1) {
 }
 
 section.banner-content .grid-boxes-section .single-box:nth-child(3n) {
-  background-color: rgba(74, 31, 97, 0.5);
+  background-color: rgba(71, 29, 88, 0.5);
 }
 
 section.banner-content .grid-boxes-section .single-box p.box-title {

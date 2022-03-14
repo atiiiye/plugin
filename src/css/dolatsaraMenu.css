@@ -49,7 +49,7 @@ body .container-fluid {
 header.dolatsara__menu {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  border-top: 1px solid #4a1f61;
+  border-top: 1px solid #471d58;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -101,7 +101,7 @@ header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dol
 }
 
 header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list ul.dolatsara__menu li.dolatsara__menu-item:hover {
-  border-bottom: 1px solid #4a1f61;
+  border-bottom: 1px solid #471d58;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list ul.dolatsara__menu li.dolatsara__menu-item a {
@@ -142,7 +142,7 @@ header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dol
 }
 
 header.dolatsara__menu div.dolatsara__all-menu nav.dolatsara__right-menu div#dolatsara__menu-list ul.dolatsara__menu li.dolatsara__menu-item ul.dolatsara__sub-menu li.dolatsara__sub-menu-item a:hover {
-  background-color: rgba(74, 31, 97, 0.15);
+  background-color: rgba(71, 29, 88, 0.15);
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu {
@@ -185,6 +185,33 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   display: block;
 }
 
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header .dolatsara__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header .dolatsara__header button.dolatsara__delete-all {
+  background: transparent;
+  border: 0;
+  color: #471d58;
+  border-radius: 28px;
+  font-size: 12px;
+  padding: .25rem .375rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: none;
+}
+
+header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header .dolatsara__header button.dolatsara__delete-all:hover {
+  background-color: rgba(71, 29, 88, 0.15);
+}
+
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal div.modal-header h5 {
   margin-bottom: 1rem;
 }
@@ -210,8 +237,8 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(74, 31, 97, 0.35);
-  border: 1px solid #4a1f61;
+  background-color: #471d58;
+  border: 1px solid #471d58;
   border-radius: 28px;
   font-size: 14px;
   margin-right: 0.2rem;
@@ -228,7 +255,7 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent .dolatsara__selected-city i.material-icons.delete-city {
   cursor: pointer;
-  color: #4a1f61;
+  color: white;
   font-size: 14px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -240,7 +267,7 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal .dolatsara__city-name-parent .dolatsara__selected-city i.material-icons.delete-city:hover {
-  background-color: rgba(74, 31, 97, 0.45);
+  background-color: rgba(71, 29, 88, 0.45);
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body {
@@ -293,9 +320,9 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-body ul.dolatsara__city-list li.dolatsara__city-list-item label.dolatsara__city-list-label input[type="checkbox"]:checked {
-  background-color: #4a1f61;
-  border: 1px solid #4a1f61;
-  accent-color: #4a1f61;
+  background-color: #471d58;
+  border: 1px solid #471d58;
+  accent-color: #471d58;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-footer {
@@ -324,17 +351,17 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-footer button.dolatsara__confirm-button {
-  border: 1px solid rgba(74, 31, 97, 0.7);
-  background-color: rgba(74, 31, 97, 0.9);
+  border: 1px solid rgba(71, 29, 88, 0.7);
+  background-color: rgba(71, 29, 88, 0.9);
   color: white;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__city-modal form.dolatsara__city-modal-form div.modal-footer button.dolatsara__confirm-button:hover {
-  background-color: #4a1f61;
+  background-color: #471d58;
 }
 
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu a.dolatsara__phone {
-  color: #4a1f61;
+  color: #471d58;
   font-weight: 600;
   text-decoration: none;
   margin-right: 0.5rem;
@@ -356,7 +383,7 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button {
   background: transparent;
   border: 0;
-  border-right: 1px solid #4a1f61;
+  border-right: 1px solid #471d58;
   padding: 0;
   margin-right: 1rem;
   display: -webkit-box;
@@ -368,7 +395,7 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button i,
 header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dolatsara__setting-list button.dolatsara__setting-button img {
   margin-right: 1rem;
-  color: #4a1f61;
+  color: #471d58;
   max-width: 40px;
   max-height: 40px;
 }
@@ -439,7 +466,7 @@ header.dolatsara__menu div.dolatsara__all-menu div.dolatsara__left-menu div.dola
   max-width: 50px;
   max-height: 50px;
   font-size: 32px;
-  color: #4a1f61;
+  color: #471d58;
 }
 
 .modal-backdrop.fade.show {

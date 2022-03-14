@@ -171,6 +171,8 @@ $(document).ready(function () {
   let city = [];
   let icon = document.querySelectorAll(".delete-city");
 
+  let deleteButton = document.querySelector(".dolatsara__delete-all");
+
   cityInput.forEach((item) => {
     item.addEventListener("change", (e) => {
       if (item.checked == true) {
@@ -192,7 +194,9 @@ $(document).ready(function () {
         cityNameParent.appendChild(div);
       } else {
         city = city.filter((i) => i !== item.id);
-        let cityItem = document.querySelectorAll("div.dolatsara__selected-city");
+        let cityItem = document.querySelectorAll(
+          "div.dolatsara__selected-city"
+        );
         cityItem.forEach((i) => {
           if (i.children[0].innerHTML === item.id)
             cityNameParent.removeChild(i);
@@ -207,12 +211,14 @@ $(document).ready(function () {
         console.log("icon", icon);
         icon.forEach((item) => {
           item.addEventListener("click", () => {
-            cityNameParent.removeChild(item.parentElement)
+            cityNameParent.removeChild(item.parentElement);
           });
         });
         selectedCity.style.display = "none";
+        deleteButton.style.display = "block";
       } else {
         selectedCity.style.display = "block";
+        deleteButton.style.display = "none";
       }
     });
   });
@@ -255,17 +261,26 @@ $(document).ready(function () {
 
     if (city.length) {
       selectedCity.style.display = "none";
+      deleteButton.style.display = "block";
       icon = document.querySelectorAll(".delete-city");
       // console.log("icon", icon);
       icon.forEach((item) => {
         item.addEventListener("click", () => {
           console.log(item.parentElement);
-          cityNameParent.removeChild(item.parentElement)
+          cityNameParent.removeChild(item.parentElement);
         });
       });
     } else {
       selectedCity.style.display = "block";
+      deleteButton.style.display = "none";
     }
+  });
+
+  deleteButton.addEventListener("click", () => {
+    city = [];
+    selectAllInput.checked = false;
+    cityInput.forEach((item) => item.checked = false);
+    cityNameParent.innerHTML = ""
   });
 
   confirmButton.addEventListener("click", () => {

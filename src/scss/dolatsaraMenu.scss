@@ -120,6 +120,27 @@ header.dolatsara__menu {
         div.modal-header {
           display: block;
 
+          .dolatsara__header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            button.dolatsara__delete-all {
+              background: transparent;
+              border: 0;
+              color: rgba($color: $color-purple, $alpha:1);
+              border-radius: 28px;
+              font-size:12px ;
+              padding:.25rem .375rem;
+              height: max-content;
+              display: none;
+
+              &:hover {
+                background-color: rgba($color: $color-purple, $alpha: 0.15);
+              }
+            }
+          }
+
           h5 {
             margin-bottom: 1rem;
           }
@@ -138,7 +159,7 @@ header.dolatsara__menu {
           .dolatsara__selected-city {
             display: flex;
             align-items: center;
-            background-color: rgba($color: $color-purple, $alpha: 0.35);
+            background-color: rgba($color: $color-purple, $alpha:1);
             border: 1px solid rgba($color: $color-purple, $alpha: 1);
             border-radius: 28px;
             font-size: 14px;
@@ -153,7 +174,7 @@ header.dolatsara__menu {
 
             i.material-icons.delete-city {
               cursor: pointer;
-              color: rgba($color: $color-purple, $alpha: 1);
+              color: rgba($color: $color-light, $alpha: 1);
               font-size: 14px;
               user-select: none;
               border-radius: 50%;
@@ -177,8 +198,6 @@ header.dolatsara__menu {
               height: 45px;
               border-radius: 4px;
               border: 1px solid rgba($color: $color-gray-2, $alpha: 0.5);
-
-
             }
 
             svg,

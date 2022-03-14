@@ -47,7 +47,7 @@ body .container-fluid {
 }
 
 button.view-all {
-  background-color: #4a1f61;
+  background-color: #471d58;
   border: 0;
   padding: 0.35rem;
   border-radius: 4px;
@@ -145,7 +145,7 @@ section.space-section div.space-section__parent h3.space-section-title {
   text-align: center;
   width: 100%;
   font-size: 1.3rem;
-  color: #4a1f61;
+  color: #471d58;
   background-color: rgba(184, 184, 184, 0.5);
   border-radius: 12px;
   padding: 1.5rem 0;
@@ -161,7 +161,7 @@ div.swiper-button-next {
   border-radius: 50%;
   width: 52px;
   height: 52px;
-  color: #4a1f61;
+  color: #471d58;
 }
 
 div.swiper-button-prev:after,

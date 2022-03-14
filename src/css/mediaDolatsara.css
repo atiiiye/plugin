@@ -232,7 +232,7 @@ body .container-fluid {
     border-bottom-right-radius: 8px;
   }
   section.dropdown-section ul.dropdown-section__list a.dropdown-section__list-item-link:hover {
-    background-color: rgba(74, 31, 97, 0.5);
+    background-color: rgba(71, 29, 88, 0.5);
   }
   section.dropdown-section ul.dropdown-section__list a.dropdown-section__list-item-link:hover > a {
     color: white;
@@ -320,7 +320,7 @@ body .container-fluid {
             flex-direction: column;
     width: 100%;
     margin: 2rem 0;
-    background-color: #4a1f61;
+    background-color: #471d58;
     border-radius: 50%;
     width: 55px;
     height: 55px;
